@@ -62,3 +62,41 @@ button:hover{
     background-color: cadetblue;
 }
 
+
+.footer {
+    width: 100%;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-right: auto;
+    margin-left: auto;
+    background: #2e4664;
+    padding-bottom: 4rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footer__logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 90rem;
+    padding-top: 1rem;
+  }
+ .footer__logo ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.footerItem a {
+    
+        display: inline;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+}
