@@ -12,7 +12,7 @@ function createBook() {
     var location = event.target.dropLocation.value;
     var number = event.target.phoneNumber.value;
 
-    new Book (title,author,copies,city,location,number)
+    new Book (title,author,copies,city,location,number);
 
 
     var jsonStringBooks = JSON.stringify(allBooks);
