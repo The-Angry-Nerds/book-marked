@@ -6,3 +6,4 @@ if (localStorage.getItem("name") === null ){
 
 var user = document.getElementById("user");
 user.textContent=`Welcome ${localStorage.getItem("name")}`;
+
