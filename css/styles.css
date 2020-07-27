@@ -105,3 +105,53 @@ footer {
     padding: 16px;
     text-decoration: none;
 }
+
+
+/* Confirmation message */
+#confirm {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  #secondDiv  {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 200px;
+    align-content: center;
+    margin: auto;
+  }
+  
+  /* The Close Button */
+  #span {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #secondDiv p{
+      text-align: center;
+      font-size: 40px;
+      color: saddlebrown;
+      padding-bottom: 15px;
+      font-weight: bolder;
+  }
+
+  #secondDiv  a{
+      margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    display: block; 
+  }
