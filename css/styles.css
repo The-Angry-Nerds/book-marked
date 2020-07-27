@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-.link_nav{
-    
+body{
+    text-align: center;
     margin: 0;
+    
+}
+
+.link_nav{
+    margin: 0px 10px;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
 
@@ -15,21 +18,32 @@ nav ,.h_nav{
     align-items: center;
     display: flex;
     background-color: #2e4664;
+    padding: 10px;
+
 }
 h1{
-    font-family:"montserrat";
+    font-family:"montserrat", sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: whitesmoke;
 }
+
 ul{
-    
     display: inline;
-    
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 999;
+
+}
+
+header ul {
+    width: 50%;
 }
 .link_nav li{
     display: inline;
-    padding: 0 , 20px;
+    padding: 0  2%;
 
 }
 
@@ -49,54 +63,45 @@ a{
     /* font-style: bold; */
 }
 
-a button{
+/* a button{
     padding: 9px 25px;
     background-color: blueviolet;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
+} */
 
-button:hover{
+/* button:hover{
     background-color: cadetblue;
-}
+} */
 
 
-.footer {
+footer {
     width: 100%;
-    padding-right: .5rem;
-    padding-left: .5rem;
-    margin-right: auto;
-    margin-left: auto;
     background: #2e4664;
-    padding-bottom: 4rem;
     text-align: center;
+    padding: 10px;
     position: fixed;
     bottom: 0;
-  }
+    left:0;
+}
 
-  .footer__logo{
+.footer-logo{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 90rem;
-    padding-top: 1rem;
-  }
- .footer__logo ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    max-width: 50px;
+}
+.footer-logo ul {
+    display: inline-block;
+    padding-inline-start: 0px;
 }
 .footerItem a {
     
-        display: inline;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }

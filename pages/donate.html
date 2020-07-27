@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+
     <style>
         fieldset{
             position: relative;
             padding-bottom: 40px;
             width: 50%;
+            border: 1px solid;
 
         }
         input {
@@ -25,13 +28,22 @@
             bottom: 10px;
         }
     </style>
-    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Donate A Book</title>
 </head>
 <body>
     <header>
-
+        <nav class="h_nav">
+            <h1 class="link_nav">Book Marked</h1>
+            <ul class="link_nav">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="library.html">LIBRARY</a></li>
+            </ul>
+            <a><span class="link_nav" id="user"></span></a>
+        </nav>
     </header>
+
     <main>
         <form id="Donateform">
             <fieldset>
@@ -71,8 +83,18 @@
         </form>
     </main>
 
-    <a href="library.html"><button>Library</button></a>
+    <!-- <a href="library.html"><button>Library</button></a> -->
     <footer>
+
+        <div class="footer-logo"> </div>
+        <div class="footerItem">
+            <ul class="link_nav">
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CALL US</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">TERMS OF USE</a></li>
+            </ul>
+        </div>
 
     </footer>
     <script src="../js/app.js"></script>
