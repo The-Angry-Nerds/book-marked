@@ -37,6 +37,13 @@ function generateBook(index) {
     title.innerHTML = allBooks[index].title;
     var author = document.createElement('li');
     author.innerHTML = allBooks[index].author;
+    var categories = document.createElement('li');
+    categories.innerHTML = allBooks[index].categories;
+
+    var remove = document.createElement('button')
+    remove.textContent = 'take book'
+    remove.setAttribute('onclick', 'removeBook(' + index + ')')
+
     var copies = document.createElement('li');
     copies.innerHTML = allBooks[index].copies;
     var city = document.createElement('li');
@@ -45,13 +52,24 @@ function generateBook(index) {
     location.innerHTML = allBooks[index].location;
     var number = document.createElement('li');
     number.innerHTML = allBooks[index].number;
+
     info.append(title);
     info.append(author);
+    info.append(categories)
     info.append(copies);
     info.append(city);
     info.append(location);
     info.append(number);
     bookParent.append(image);
     bookParent.append(info);
+    bookParent.append(remove);
 
+}
+function removeBook(index) {
+    console.log('Start of function');
+    var allBooks = JSON.parse(localStorage.getItem('allBooks'));
+    allBooks.splice(index, 1);
+    allBooks = JSON.stringify(allBooks);
+    localStorage.setItem("allBooks", allBooks);
+    window.location.replace('library.html');
 }
