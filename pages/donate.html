@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/reset.css">
 
     <style>
-        fieldset{
+        .fieldset{
             position: relative;
             padding-bottom: 40px;
             width: 50%;
@@ -68,8 +68,11 @@
                 <input id="phoneNumber" type="tel" >
 
                 <label for="categories">Categories</label>
-                <input id="categories" type="text">
-                
+                <select id="categories">
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Informative">Informative</option>
+                  </select>                
                 <input type="submit" value="Donate">
     
             </fieldset>
