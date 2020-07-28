@@ -102,7 +102,7 @@ footer {
 }
 
 
-/* index styles */
+index styles
 #figure-logo{
     background-color: white;
     padding: 20px;
@@ -132,7 +132,7 @@ footer {
     }
 .buttons-index img{
     
-    /* display: inline; */
+    display: inline;
     margin: 25px;
     margin-left: 70px;
     padding-top: 20px;
@@ -142,13 +142,13 @@ footer {
 }
 .buttons-index2 img{
  
-    /* display: inline; */
+    display: inline;
     margin: 25px;
     padding-top: 20px;
     border-radius: 3px;
 }
 .buttons-index2 img{
-    /* display: inline; */
+    display: inline;
     width: 20px;
 }
 
