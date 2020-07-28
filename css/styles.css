@@ -117,17 +117,39 @@ footer {
     word-spacing: 10px;
     line-height: 1.5;
     padding: 20px;
+
     color: #2C3743;
 }
-
-.buttons-index{
-    display: inline-block;
-    background-image: url('../images/give.jpg');
-    width: 200px;
-    height: 100%;
+#button {
+    display: inline;
+    width: 20px;
+    }
+#button2 {
+        
+      display: inline;
+        width: 20px;
+    
+    }
+.buttons-index img{
+    
+    /* display: inline; */
     margin: 25px;
-    padding-top: 45px;
+    margin-left: 70px;
+    padding-top: 20px;
     border-radius: 3px;
+   
+   
+}
+.buttons-index2 img{
+ 
+    /* display: inline; */
+    margin: 25px;
+    padding-top: 20px;
+    border-radius: 3px;
+}
+.buttons-index2 img{
+    /* display: inline; */
+    width: 20px;
 }
 
 .buttons-index:hover{
