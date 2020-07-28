@@ -135,6 +135,9 @@ footer {
     font-size: 28px;
     font-weight: bold;
   }
+  #span:hover{
+    cursor: pointer;
+  }
   
   #secondDiv p{
       text-align: center;
@@ -199,6 +202,23 @@ div#categories{
     padding: 20px;
 }
 
+/* #tabs{
+} */
+#popUpInfo {
+  background-color: #2C3743;
+  position: absolute;
+  width: 50%;
+  height: fit-content;
+  padding: 30px;
+  top: 0px;
+  left: 20%;
+  z-index: 999;
+  display: none;
+}
+.relative {
+  position: relative;
+
+}
 
 
 
