@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Donate A Book</title>
 </head>
+
 <body>
     <header>
         <nav class="h_nav">
@@ -22,46 +24,45 @@
 
     <main>
         <form id="Donateform">
+            <div class="title-container">
+                <h1 class="donate-title">Want to donate a book?</h1>
+                <p class="donate-subtitle">Fill in the form below</p>
+            </div>
             <fieldset class="fieldset-donate">
-                <legend>Book Donation Details</legend>
+                <legend class="donate-legend">Book Donation Details</legend>
 
-                <label for="title"  >Book Title</label>
-                <input class="input-donate" id="title" type="text" required>
-    
-                <label for="">Author</label>
-                <input class="input-donate" id="author" type="text">
-                
-                <label for="copies">Available copies</label>
-                <input class="input-donate" id="copies" type="number">
+                <!-- <label for="title"  >Book Title</label> -->
+                <input class="input-donate" id="title" type="text" required placeholder="Title">
 
-                <label for="city">City</label>
-                <input class="input-donate" id="city" type="text" required>
+                <!-- <label for="">Author</label> -->
+                <input class="input-donate" id="author" type="text" placeholder="Author">
 
-                <label for="dropLocation">Drop location</label>
-                <input class="input-donate" id="dropLocation" type="text" required>
+                <!-- <label for="copies">Available copies</label> -->
+                <input class="input-donate" id="copies" type="number" placeholder="Copies">
 
-                <label for="phoneNumber">Phone Number</label>
-                <input class="input-donate" id="phoneNumber" type="tel" >
+                <!-- <label for="city">City</label> -->
+                <input class="input-donate" id="city" type="text" required placeholder="City">
 
-                <label for="categories">Categories</label>
-                <select id="categories">
-                    <option value="Drama">Drama</option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Informative">Informative</option>
-                  </select>                
+                <!-- <label for="dropLocation">Drop location</label> -->
+                <input class="input-donate" id="dropLocation" type="text" required placeholder="Drop Location">
+
+                <!-- <label for="phoneNumber">Phone Number</label> -->
+                <input class="input-donate" id="phoneNumber" type="tel" placeholder="Phone Number">
+                <div class="cat-container">
+                    <select id="categories" class="select-css">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Informative">Informative</option>
+                    </select>
+                </div>
                 <input class="donate-btn" type="submit" value="Donate">
-    
+
             </fieldset>
         </form>
-        <!-- <form id="comments">
-            <fieldset>
-                <label for="comment">Add a comment</label>
-                <input type="text" id="comment">
-                <input type="submit" value="comment">
+        <div id="confirm">
 
-
-            </fieldset>
-        </form> -->
+        </div>
     </main>
 
     <!-- <a href="library.html"><button>Library</button></a> -->
@@ -81,4 +82,5 @@
     <script src="../js/app.js"></script>
     <script src="../js/donate.js"></script>
 </body>
+
 </html>

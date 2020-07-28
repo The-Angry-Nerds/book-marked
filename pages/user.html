@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enter your name</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/userstyle.css">
 </head>
-<body>
-    <main>
-        <form id="welcome">
-            <label for="name">Enter Your Name</label>
-            <input type="text" id="name" required>
-            <input type="submit">
-        </form>
-    </main>
 
+<body>
+    <header>
+        <nav class="h_nav">
+            <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
+        </nav>
+    </header>
+    <div class="bg-image"></div>
+    <main>
+        <div id="container">
+            <form id="welcome">
+                <label id="namelabel" for="name">My name is</label>
+                <input type="text" id="name" required placeholder="      John Doe">
+                <input id="namesubmit" type="submit" value="Enter">
+            </form>
+        </div>
+
+    </main>
+    
     <script src="../js/user.js"></script>
 </body>
+
 </html>
