@@ -122,9 +122,9 @@ footer {
 
 .buttons-index{
     display: inline-block;
-    background-color: #2C3743 ;
+    background-image: url('../images/give.jpg');
     width: 200px;
-    height: 55px;
+    height: 100%;
     margin: 25px;
     padding-top: 45px;
     border-radius: 3px;
@@ -181,11 +181,172 @@ a{
 
 .donate-btn {
     display: inline;
-    width: fit-content;
+   
     text-align: left;
     position: absolute;
     right: 20px;
     bottom: 10px;
 }
 
+#categText{
+    background-color: white;
+    height: 75px;
+    
+    text-align: left;
+    color: black;
+    line-height: 70px;
+    text-overflow: clip ;
+    font-family: "montserrat", sans-serif;
+    font-size: 30px;
+}
+#categText:hover{
+    background-color: #8B90B4 ;
+    transition-duration: inherit;
+    font-size:300%;
+    font-style: initial;
+    color:white;
+  
 
+    
+
+
+}
+.tab {
+    overflow: hidden;
+    background-color: inherit;
+    text-align: center;
+    
+   
+
+   
+  }
+  .tab button {
+      margin-left: 100px;
+      
+    background-color: inherit;
+    display: grid;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-decoration-line: underline;
+   
+  }
+  .tab button:hover {
+     background-color: #2C3743;
+    background-clip: border-box;
+    transition: 0.3s;
+    
+    
+
+  }
+  .tab button.active {
+    background-color: #ccc;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+  }  
+  div {
+    animation: rotate-all 2s 0 infinite linear alternate;
+  }
+  .divt{
+    margin-left:789px;
+  }
+  
+  .div1 {
+    width: 80px;
+    height: 80px;
+    background-color: #669999;
+    position: relative;
+    margin: auto;
+    animation: square-to-circle 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+  
+  }
+  
+  .div2 {
+      width: 80px;
+    height: 80px;
+    background-color: #669999;
+    position: relative;
+    margin: auto;
+    animation: square-to-circle2 2.5s .42s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+  }
+  
+  #one {
+    top: 150px;
+  }
+   
+  #two {
+    top: 150px;
+    right: 80px;
+  }
+  
+  #three {
+    top: 150px;
+  }
+  
+  #four {
+    bottom: 10px;
+    left: 80px;
+  }
+  
+  @keyframes square-to-circle {
+    0%  {
+      border-radius:0 0 0 0;
+     
+      transform:rotate(45deg);
+    }
+    25%  {
+      border-radius:50% 0 0 0;
+      background:darksalmon;
+      transform:rotate(135deg);
+    }
+    50%  {
+      border-radius:50% 50% 0 0;
+      background:indianred;
+      transform:rotate(180deg);
+    }
+    75%  { 
+      border-radius:50% 50% 50% 0;
+      background:lightcoral;
+      transform:rotate(315deg);
+    }
+    100% {  
+      border-radius:50%;
+      background:darksalmon;
+      transform:rotate(404deg);
+    }
+  }
+  
+  @keyframes square-to-circle2 {
+    0%  {
+      border-radius:0 0 0 0;
+     
+      transform:rotate(45deg);
+    }
+    25%  {
+      border-radius:0 0 50% 0;
+      background:darksalmon;
+      transform:rotate(135deg);
+    }
+    50%  {
+      border-radius:0 0 50% 50%;
+      background:indianred;
+      transform:rotate(180deg);
+    }
+    75%  { 
+      border-radius:50% 0 50% 50%;
+      background:lightcoral;
+      transform:rotate(315deg);
+    }
+    100% {  
+      border-radius:50%;
+      background:darksalmon;
+      transform:rotate(404deg);
+    }
+  }
+  
+  
