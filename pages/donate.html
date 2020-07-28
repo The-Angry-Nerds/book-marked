@@ -4,77 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-
-    <style>
-        fieldset{
-            position: relative;
-            padding-bottom: 40px;
-            width: 50%;
-            border: 1px solid;
-
-        }
-        input {
-            display: block;
-            height: 20px;
-            width: 95%;
-
-        }
-        [type="submit"]{
-            display: inline;
-            width: fit-content;
-            text-align: left;
-            position: absolute;
-            right: 20px;
-            bottom: 10px;
-        }
-    </style>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Donate A Book</title>
 </head>
 <body>
     <header>
         <nav class="h_nav">
-            <h1 class="link_nav">Book Marked</h1>
+            <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
             <ul class="link_nav">
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="donate.html">DONATE</a></li>
                 <li><a href="library.html">LIBRARY</a></li>
             </ul>
-            <a><span class="link_nav" id="user"></span></a>
+            <a><span class="link_nav centerHead" id="user"></span></a>
         </nav>
     </header>
 
     <main>
         <form id="Donateform">
-            <fieldset>
+            <fieldset class="fieldset-donate">
                 <legend>Book Donation Details</legend>
 
                 <label for="title"  >Book Title</label>
-                <input id="title" type="text" required>
+                <input class="input-donate" id="title" type="text" required>
     
                 <label for="">Author</label>
-                <input id="author" type="text">
+                <input class="input-donate" id="author" type="text">
                 
                 <label for="copies">Available copies</label>
-                <input id="copies" type="number">
+                <input class="input-donate" id="copies" type="number">
 
                 <label for="city">City</label>
-                <input id="city" type="text" required>
+                <input class="input-donate" id="city" type="text" required>
 
                 <label for="dropLocation">Drop location</label>
-                <input id="dropLocation" type="text" required>
+                <input class="input-donate" id="dropLocation" type="text" required>
 
                 <label for="phoneNumber">Phone Number</label>
-                <input id="phoneNumber" type="tel" >
+                <input class="input-donate" id="phoneNumber" type="tel" >
 
                 <label for="categories">Categories</label>
-                <input id="categories" type="text">
+                <input class="input-donate" id="categories" type="text">
                 
-                <input type="submit" value="Donate">
+                <input class="donate-btn" type="submit" value="Donate">
     
             </fieldset>
         </form>
-        <form id="comments">
+        <!-- <form id="comments">
             <fieldset>
                 <label for="comment">Add a comment</label>
                 <input type="text" id="comment">
@@ -82,7 +58,7 @@
 
 
             </fieldset>
-        </form>
+        </form> -->
     </main>
 
     <!-- <a href="library.html"><button>Library</button></a> -->

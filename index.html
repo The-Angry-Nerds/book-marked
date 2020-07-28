@@ -13,21 +13,26 @@
 <body>
     <header>
         <nav class="h_nav">
-            <h1 class="link_nav">Book Marked</h1>
+            <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
 
             <ul class="link_nav">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="pages/donate.html">DONATE</a></li>
                 <li><a href="pages/library.html">LIBRARY</a></li>
             </ul>
-            <a><span class="link_nav" id="user"></span></a>
+            <a><span class="link_nav centerHead" id="user"></span></a>
         </nav>
 
     </header>
 
     <main>
-        <article>
-            <div id="discrption">
+        <figure id="figure-logo"> 
+            <img id="img-logo" src="/images/logo.png" alt="logo">
+        </figure>
+        <article id="article-index">
+
+            <div id="description">
+               
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab alias magni, iure, pariatur quas fugit
                     adipisci dolor officia beatae dolorum minima a inventore fugiat sed rerum molestiae vero laborum.
                     Voluptatibus.
@@ -36,21 +41,21 @@
                     fugiat soluta! Officia?
                     Eius itaque et suscipit reprehenderit nemo, ad illo voluptatum, quae, fugit distinctio earum magni
                     aspernatur error id. Laboriosam perferendis vel maiores nulla eligendi voluptates, beatae
-                    accusantium. Quos accusantium voluptatibus est?</p>
+                    accusantium. Quos accusantium voluptatibus est?
+                </p>
             </div>
 
             <div>
                 <div id="button">
-                    <button> check available books</button>
-                    <button> giv a book </button>
+                    <a class="buttons-index" href="pages/library.html">Check available books</a>
+                    <a class="buttons-index" href="pages/donate.html"> Give a Book </a>
                 </div><br>
             </div>
 
-            <div>
-                <div id="categories"></div>
+            <div id="categories">
                 <button>cate1</button>
                 <button>cate2</button>
-                <button>cate4</button>
+                <button>cate3</button>
             </div>
         </article>
     </main>
