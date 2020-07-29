@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* User name */
+
+
+#welcome {
+    padding-top: 4%;
+    padding-left: 4%;
+    margin: 30px auto 0px auto; 
+    width:90%;
+    height: 80%;
+    background-color: #d8dce48a;
+    border-radius: 5px;
+    
+    
+    
+}
+
+#namelabel {
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    margin-left: -5%;
+    margin-bottom: 4%;
+    display: block;
+
+}
+
+#name {
+    font-family: 'Indie Flower', cursive;
+    height: 30% ;
+    width: 50%;
+    margin-left: 23%;
+    border-radius: 15px;
+    color: saddlebrown;
+    font-size: larger;
+    border: 0px;
+    display: block;
+    text-indent: 60px;
+
+}
+
+#name:hover {
+    border: 0px black;
+}
+
+#namesubmit {
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    margin-left: 40%;
+    margin-top: 4%;
+    border-radius: 10px;
+    padding: 1% 4% 1% 4%;
+    border: 0;
+    display: block;
+
+}
+
+#namesubmit:hover {
+    background-color: #a19494 ;
+    border: black 1px solid;
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+#container {
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 50%;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+body, html {
+    height: 97.4%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("https://miro.medium.com/max/11914/0*nkMHIYllnotYcos_");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(5px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+nav ,.h_nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #8B90B4;
+    padding: 10px;
+        font-family:"montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: whitesmoke;
+}
+
+
+.link_nav{
+    margin: 0px 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centerHead{
+    width: 155px;
+    display: inline-block;
+}
+
+.alignLeft{
+    text-align: left;
+}

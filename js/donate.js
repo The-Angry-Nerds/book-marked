@@ -33,7 +33,7 @@ function Modal(){
     span.innerHTML = 'x';
     var confirm = document.createElement('p');
     confirm.setAttribute('id','confirmationMsg');
-    confirm.textContent = 'Order Confirmed';
+    confirm.textContent = 'Book added successfully';
     var link = document.createElement('a');
     link.setAttribute('href', 'library.html');
     link.innerHTML = 'Click here to check the books at the library';
