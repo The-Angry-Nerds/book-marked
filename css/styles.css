@@ -102,7 +102,59 @@ footer {
 }
 
 
-index styles
+
+/* Confirmation pop-up message */
+#confirm {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  #secondDiv  {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 200px;
+    align-content: center;
+    margin: auto;
+  }
+  
+  /* The Close Button */
+  #span {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  
+  #secondDiv p{
+      text-align: center;
+      font-size: 40px;
+      color: saddlebrown;
+      padding-bottom: 15px;
+      font-weight: bolder;
+  }
+
+  #secondDiv  a{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    display: block; 
+  }
+
+
+/* index styles */
 #figure-logo{
     background-color: white;
     padding: 20px;
@@ -117,39 +169,21 @@ index styles
     word-spacing: 10px;
     line-height: 1.5;
     padding: 20px;
-
     color: #2C3743;
 }
-#button {
-    display: inline;
-    width: 20px;
-    }
-#button2 {
-        
-      display: inline;
-        width: 20px;
-    
-    }
-.buttons-index img{
-    
-    display: inline;
-    margin: 25px;
-    margin-left: 70px;
-    padding-top: 20px;
-    border-radius: 3px;
-   
-   
+#button{
+  justify-content: space-between;
+  text-align: center;
 }
-.buttons-index2 img{
- 
-    display: inline;
-    margin: 25px;
-    padding-top: 20px;
+
+.buttons-index{
+    
+    display: inline-block;
+    padding-top: 35px;
     border-radius: 3px;
-}
-.buttons-index2 img{
-    display: inline;
-    width: 20px;
+    margin-right: 175px;
+    margin-left: 20px;
+    text-align: center;
 }
 
 .buttons-index:hover{
@@ -203,7 +237,8 @@ a{
 
 .donate-btn {
     display: inline;
-   
+
+    width: fit-content;
     text-align: left;
     position: absolute;
     right: 20px;
@@ -222,11 +257,13 @@ a{
     font-size: 30px;
 }
 #categText:hover{
+    text-indent:"categories";
     background-color: #8B90B4 ;
     transition-duration: inherit;
     font-size:300%;
     font-style: initial;
     color:white;
+    text-align: center;
   
 
     
@@ -286,6 +323,10 @@ a{
     margin: auto;
     animation: square-to-circle 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
   
+  }
+  a  img{
+    width: 200px;
+    height: 200px;
   }
   
   .div2 {
@@ -370,5 +411,3 @@ a{
       transform:rotate(404deg);
     }
   }
-  
-  
