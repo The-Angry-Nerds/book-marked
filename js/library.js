@@ -3,7 +3,6 @@
 var columnOne = document.getElementById('column1');
 var columnTwo = document.getElementById('column2');
 var catDiv = document.getElementById("catButtons");
-var filteredBooks = [];
 console.log(allBooks);
 
 // create a div that has the books info 
@@ -80,15 +79,6 @@ function removeBook(index) {
     location.reload();
 }
 
-// fill the filtered books depending on categories
-function filterByCat( categ ){
-    filteredBooks = [];
-    for (let i = 0; i < allBooks.length; i++) {
-        if (allBooks[i].categories == categ ) {
-            filteredBooks.push(allBooks[i]);
-        }
-    }
-}
 
 // clear the content of the columns
 function clearCol(){
@@ -104,7 +94,7 @@ function generateBookByCat(){
     var catId = event.target.id;
     if (catId !== "allCat") {
         filterByCat(catId);
-        fillCol(filteredBooks);    
+        fillCol(filteredBooks); //filtered books and their function in the app.js    
     } else {
         fillCol(allBooks);
     }
