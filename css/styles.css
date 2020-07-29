@@ -128,12 +128,14 @@ footer {
     margin: auto;
   }
   
+  /* The Close Button */
   #span {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
+
 
   #span:hover {
     color: #464545;
@@ -150,6 +152,7 @@ footer {
   }
 
   #secondDiv  a{
+
       margin-top: 50px;
     text-align: center;
     font-size: 24px;
@@ -165,9 +168,6 @@ footer {
     transition-duration: 0.5s ;
 
 }
-
-
-
 
 
 
@@ -190,9 +190,15 @@ footer {
     padding: 20px;
     color: #2C3743;
 }
+#button{
+  justify-content: space-between;
+  text-align: center;
+}
 
 .buttons-index{
+    
     display: inline-block;
+
     background-image: url('../images/give.jpg');
     width: 200px;
     height: 100%;
@@ -200,6 +206,9 @@ footer {
     margin: 25px;
     padding-top: 45px;
     border-radius: 3px;
+    margin-right: 175px;
+    margin-left: 20px;
+    text-align: center;
 }
 
 .buttons-index:hover{
@@ -391,11 +400,13 @@ a{
     font-size: 30px;
 }
 #categText:hover{
+    text-indent:"categories";
     background-color: #8B90B4 ;
     transition-duration: inherit;
     font-size:300%;
     font-style: initial;
     color:white;
+    text-align: center;
   
 
     
@@ -455,6 +466,10 @@ a{
     margin: auto;
     animation: square-to-circle 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
   
+  }
+  a  img{
+    width: 200px;
+    height: 200px;
   }
   
   .div2 {
@@ -539,4 +554,3 @@ a{
       transform:rotate(404deg);
     }
   }
-  
