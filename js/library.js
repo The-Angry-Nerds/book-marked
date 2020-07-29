@@ -5,6 +5,7 @@ var columnTwo = document.getElementById('column2');
 var catDiv = document.getElementById("catButtons");
 console.log(allBooks);
 
+
 // create a div that has the books info 
 function generateBook(index,array){
     var bookParent = document.createElement('div');

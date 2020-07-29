@@ -9,8 +9,10 @@ body{
 main{
     width: 800px;
     display: inline-block;
-    background-color: #D8DCE4;
-    height: 1000px;
+    /* background-color: #D8DCE4; */
+    background-color: #ddd4c8;
+    height: 100%;
+    min-height: 600px;
 }
 
 .centerHead{
@@ -44,7 +46,7 @@ h1{
 }
 
 ul{
-    display: inline;
+  display: inline;
 }
 
 header{
@@ -105,9 +107,9 @@ footer {
     overflow: auto; 
     
     background-color: rgba(0,0,0,0.4); 
-  }
+}
   
-  #secondDiv  {
+#secondDiv  {
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
@@ -118,7 +120,7 @@ footer {
   }
   
   /* The Close Button */
-  #span {
+#span {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -126,23 +128,23 @@ footer {
   }
 
 
-  #span:hover {
+#span:hover {
     color: #464545;
     cursor: pointer;
   }
   
-  #secondDiv p{
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      font-size: 40px;
-      color: #2C3743;
-      padding-bottom: 15px;
-      font-weight: bolder;
+#secondDiv p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #2C3743;
+  padding-bottom: 15px;
+  font-weight: bolder;
   }
 
-  #secondDiv  a{
+#secondDiv  a{
 
-      margin-top: 50px;
+    margin-top: 50px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -151,10 +153,10 @@ footer {
     text-decoration: underline;
   }
 
-  #secondDiv  a:hover{
+#secondDiv  a:hover{
   
-    color: rgb(70, 53, 141);
-    transition-duration: 0.5s ;
+  color: rgb(70, 53, 141);
+  transition-duration: 0.5s ;
 
 }
 
@@ -183,7 +185,18 @@ ul.infoList {
   margin: 25px 70px;
 }
 .removeButton {
-  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: white;
+}
+.removeButton:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #2C3743;
+  transition-duration: 0.6s;
+  color: white;
+
 }
 .cover{
   position: absolute;
@@ -192,29 +205,52 @@ ul.infoList {
   left: 0px;
   transform-origin: left;
   box-shadow: 5px 5px 10px grey;
-
 }
+
 /* to make sure the books in index are not affected */
 .columns .book:hover .cover{ 
   display: block;
   transform: rotateY(45deg);
   transition-duration: 1s;
   box-shadow: 10px 10px 20px grey;
-
-
-
 }
+
 .columns .book:hover .infoList{
   transform: translate(120px ,0px);
   transition-duration: 1s;
   transition-delay: 0.2s;
-
 }
+
 img.cover {
   width: 200px;
   height: 250px;
 }
 
+#catButtons button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid #2C3743;
+}
+#catButtons{
+  height: 39px;
+  border-bottom: 1px solid #2C3743;
+  background-color: white;
+
+}
+#catButtons button:hover{
+  border: none;
+  cursor: pointer;
+  background-color: #ddd4c8;
+}
+#catButtons button:focus{
+  outline: none;
+  background-color: #ddd4c8;
+  border-bottom: 1px solid #ddd4c8;
+
+
+}
 
 
 /* index styles */
