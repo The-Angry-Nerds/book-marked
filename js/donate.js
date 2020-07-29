@@ -1,8 +1,9 @@
 'use strict'
 
+var confirmParent = document.getElementById("confirm");
+
 var donateForm = document.getElementById('Donateform');
 donateForm.addEventListener('submit', createBook);
-console.log("before", allBooks);
 function createBook() {
     event.preventDefault();
     var title = event.target.title.value;
@@ -19,8 +20,40 @@ function createBook() {
     var jsonStringBooks = JSON.stringify(allBooks);
 
     localStorage.setItem('allBooks',jsonStringBooks);
+    confirmParent.style.display = "block";
+    donateForm.reset();
+
 };
 
+var span = document.createElement("span");
+function Modal(){
+    var secondDiv = document.createElement("div")
+    secondDiv.setAttribute('id','secondDiv');
+    span.setAttribute('id','span');
+    span.innerHTML = 'x';
+    var confirm = document.createElement('p');
+    confirm.setAttribute('id','confirmationMsg');
+    confirm.textContent = 'Book added successfully';
+    var link = document.createElement('a');
+    link.setAttribute('href', 'library.html');
+    link.innerHTML = 'Click here to check the books at the library';
+    secondDiv.append(span);
+    secondDiv.append(confirm);
+    secondDiv.append(link);
+    confirmParent.append(secondDiv);
+  
+  };
 
+
+  span.onclick = function () {
+    confirmParent.style.display = 'none';
+  }
+  window.onclick = function (event) {
+    if (event.target == confirmParent) {
+        confirmParent.style.display = 'none';
+    };
+  };
+
+  Modal()
 
 // var perviousArray = ;
