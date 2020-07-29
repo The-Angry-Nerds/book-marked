@@ -78,18 +78,7 @@ footer {
     position: fixed;
     bottom: 0;
     left:0;
-}
-
-.footer-logo{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 50px;
-}
-
-.footer-logo ul {
-    display: inline-block;
-    padding-inline-start: 0px;
+    z-index: 100;
 }
 
 .footerItem a {
@@ -170,6 +159,61 @@ footer {
 }
 
 
+/* library styles */
+ul.infoList {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: white;
+  width:195px;
+  height: 170px;
+  padding: 50px 5px 5px 5px;
+  padding-inline-start: 0px;
+  z-index: 1;
+  box-shadow: 2px 2px 5px rgb(206, 206, 206);
+}
+.infoList li {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+.book {
+  position: relative;
+  width: 200px;
+  padding-top: 270px;
+  margin: 25px 70px;
+}
+.removeButton {
+  display: block;
+}
+.cover{
+  position: absolute;
+  z-index: 10;
+  top:0;
+  left: 0px;
+  transform-origin: left;
+  box-shadow: 5px 5px 10px grey;
+
+}
+/* to make sure the books in index are not affected */
+.columns .book:hover .cover{ 
+  display: block;
+  transform: rotateY(45deg);
+  transition-duration: 1s;
+  box-shadow: 10px 10px 20px grey;
+
+
+
+}
+.columns .book:hover .infoList{
+  transform: translate(120px ,0px);
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+
+}
+img.cover {
+  width: 200px;
+  height: 250px;
+}
 
 
 
@@ -259,7 +303,6 @@ a{
 
 .columns {
     display: inline-block;
-    margin-right: 100px;
 }
 
 .fieldset-donate{
