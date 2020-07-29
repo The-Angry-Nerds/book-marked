@@ -31,14 +31,14 @@ function displayHide(){
 }
 
 //list all books as a default
-if (allBooks.length == 0) {
-    categDiv.appendChild(empty);
-} else {
-    for (let i = 0; i < allBooks.length && i < 3; i++) {
-        var bookDiv = generateIndexBooks(i, allBooks);
-        categDiv.appendChild(bookDiv);
-    }
-}
+// if (allBooks.length == 0) {
+//     categDiv.appendChild(empty);
+// } else {
+//     for (let i = 0; i < allBooks.length && i < 3; i++) {
+//         var bookDiv = generateIndexBooks(i, allBooks);
+//         categDiv.appendChild(bookDiv);
+//     }
+// }
 
 //when tabs are clicked
 tabsDiv.addEventListener('click', clickHandler);
