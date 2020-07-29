@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 /* general styles */
 body{
     text-align: center;
@@ -168,8 +170,8 @@ ul.infoList {
   left: 0;
   background-color: white;
   width:195px;
-  height: 170px;
-  padding: 50px 5px 5px 5px;
+  height: 185px;
+  padding: 25px 5px 5px 5px;
   padding-inline-start: 0px;
   z-index: 1;
   box-shadow: 2px 2px 5px rgb(206, 206, 206);
@@ -177,6 +179,7 @@ ul.infoList {
 .infoList li {
   list-style-type: none;
   border-bottom: 1px solid rgb(214, 214, 214);
+  font-family: 'Indie Flower', cursive;
 }
 .book {
   position: relative;
@@ -225,7 +228,7 @@ img.cover {
   width: 200px;
   height: 250px;
 }
-
+/* tabs */
 #catButtons button{
   width: 100px;
   height: 40px;
