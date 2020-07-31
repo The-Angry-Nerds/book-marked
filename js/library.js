@@ -5,6 +5,7 @@ var columnTwo = document.getElementById('column2');
 var catDiv = document.getElementById("catButtons");
 console.log(allBooks);
 
+
 // create a div that has the books info 
 function generateBook(index,array){
     var bookParent = document.createElement('div');
@@ -22,7 +23,9 @@ function generateBook(index,array){
     //in the div
     bookParent.setAttribute('class', 'book');
     image.setAttribute('class', 'cover');
-    image.setAttribute('src', 'https://place-hold.it/200x250');
+    image.setAttribute('src', '../images/cover2.jpg');
+    
+
     info.setAttribute('class', 'infoList');
 
     //li elements
@@ -38,6 +41,7 @@ function generateBook(index,array){
     var remove = document.createElement('button');
     remove.textContent = 'take book';
     remove.setAttribute('onclick', 'removeBook(' + index + ')');
+    remove.setAttribute('class','removeButton');
 
     info.append(title);
     info.append(author);
