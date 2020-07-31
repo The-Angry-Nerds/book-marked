@@ -9,55 +9,74 @@ empty.innerHTML = `No books available`
 var popUpDiv = document.getElementById('popUpInfo');
 categDiv.addEventListener('click', showPopUp);
 function showPopUp() {
-    popUpDiv.setAttribute('style', 'display:block;');
-    for (let index = 0; index < filteredBooks.length && index < 3 ; index++) {
-      if(event.target.id == filteredBooks[index].title){
-        popUpDiv.innerHTML=
-        `<a onclick="displayHide()" style="float:right;" id="span">X</a>
-        <ul> 
-            <li>Title: ${filteredBooks[index].title} </li>     
-            <li>Author: ${filteredBooks[index].author}</li>                
-            <liCategory: >${filteredBooks[index].categories}</li>                
-            <li>Available copies: ${filteredBooks[index].copies}</li>
-            <li>City: ${filteredBooks[index].city}</li>                
-            <li>Location: ${filteredBooks[index].location}</li>                  
-            <li>Contact info:${filteredBooks[index].number}</li>                
-        </ul> `
-      }
+    if (filteredBooks.length !== 0) {
+
+        renderPopup(filteredBooks)
+
+    }
+    else {
+        renderPopup(allBooks)
     }
 }
-function displayHide(){
-    popUpDiv.setAttribute("style","display:none;")
+
+function renderPopup(indexArray) {   //Render Pop up for either default or filtered books
+
+    for (let index = 0; index < indexArray.length && index < 3; index++) {
+        if (event.target.id == indexArray[index].title) {
+            popUpDiv.setAttribute('style', 'display:block;');
+            popUpDiv.innerHTML =
+                `<a onclick="displayHide()" style="float:right;" id="span">X</a>
+    <ul> 
+        <li>Title: ${indexArray[index].title} </li>     
+        <li>Author: ${indexArray[index].author}</li>                
+        <liCategory: >${indexArray[index].categories}</li>                
+        <li>Available copies: ${indexArray[index].copies}</li>
+        <li>City: ${indexArray[index].city}</li>                
+        <li>Location: ${indexArray[index].location}</li>                  
+        <li>Contact info:${indexArray[index].number}</li>                
+    </ul> `
+        }
+    }
+}
+
+
+
+function displayHide() {
+    popUpDiv.setAttribute("style", "display:none;")
 }
 
 //list all books as a default
-// if (allBooks.length == 0) {
-//     categDiv.appendChild(empty);
-// } else {
-//     for (let i = 0; i < allBooks.length && i < 3; i++) {
-//         var bookDiv = generateIndexBooks(i, allBooks);
-//         categDiv.appendChild(bookDiv);
-//     }
-// }
+if (allBooks.length == 0) {
+    categDiv.appendChild(empty);
+} else {
+    var book;
+    for (let index = 0; index < allBooks.length && index < 3; index++) { //to take only first 3 books
+        book = generateIndexBooks(index, allBooks);
+        categDiv.appendChild(book);
+    }
+}
 
 //when tabs are clicked
 tabsDiv.addEventListener('click', clickHandler);
 function clickHandler() {
-    categDiv.textContent = ""; //remove previous books
-    filterByCat(event.target.id);
-    var book;
-    if (filteredBooks.length == 0) {
-        //TODO :add how many books in category 
+    if (event.target.id !== 'tabs') {  // Makes sure it only picks up the 3 buttons not the whole divs
 
-        categDiv.appendChild(empty);
-    } else {
-        for (let index = 0; index < filteredBooks.length && index < 3; index++) { //to take only first 3 books
-            book = generateIndexBooks(index, filteredBooks);
-            categDiv.appendChild(book);
+        categDiv.textContent = ""; //remove previous books
+        filterByCat(event.target.id);
+        var book;
+        if (filteredBooks.length == 0) {
+            //TODO :add how many books in category 
+
+            categDiv.appendChild(empty);
+        } else {
+            for (let index = 0; index < filteredBooks.length && index < 3; index++) { //to take only first 3 books
+                book = generateIndexBooks(index, filteredBooks);
+                categDiv.appendChild(book);
+            }
         }
+
+
     }
-
-
 }
 
 function generateIndexBooks(index, array) {
@@ -71,6 +90,7 @@ function generateIndexBooks(index, array) {
     bookParent.setAttribute('class', 'book');
     bookParent.setAttribute('style', 'display : inline-block; margin: 0px 1%;')
     image.setAttribute('class', 'cover');
+
     image.setAttribute('src', '../images/cover2.jpg');
     image.setAttribute('id',array[index].title); //to use as an target id
 
@@ -82,9 +102,4 @@ function generateIndexBooks(index, array) {
     bookParent.append(image);
     bookParent.append(info);
     return bookParent;
-}
-
-function popUp() {
-    var selectedBook = document.getElementById()
-
-}
+};
