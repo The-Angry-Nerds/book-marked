@@ -11,6 +11,7 @@ function generateBook(index,array){
     var bookParent = document.createElement('div');
 
     var image = document.createElement('img');
+    var emptyPage = document .createElement('div')
     var info = document.createElement('ul');
     var title = document.createElement('li');
     var author = document.createElement('li');
@@ -22,6 +23,7 @@ function generateBook(index,array){
 
     //in the div
     bookParent.setAttribute('class', 'book');
+    emptyPage.setAttribute('class','emptyPage');
     image.setAttribute('class', 'cover');
     image.setAttribute('src', '../images/cover3.jpg');
     
@@ -51,6 +53,7 @@ function generateBook(index,array){
     info.append(location);
     info.append(number);
     bookParent.append(image);
+    bookParent.append(emptyPage);
     bookParent.append(info);
     bookParent.append(remove);
 
