@@ -23,7 +23,7 @@ function generateBook(index,array){
     //in the div
     bookParent.setAttribute('class', 'book');
     image.setAttribute('class', 'cover');
-    image.setAttribute('src', '../images/cover2.jpg');
+    image.setAttribute('src', '../images/cover3.jpg');
     
 
     info.setAttribute('class', 'infoList');

@@ -91,7 +91,7 @@ function generateIndexBooks(index, array) {
     bookParent.setAttribute('style', 'display : inline-block; margin: 0px 1%;')
     image.setAttribute('class', 'cover');
 
-    image.setAttribute('src', '../images/cover2.jpg');
+    image.setAttribute('src', '../images/cover3.jpg');
     image.setAttribute('id',array[index].title); //to use as an target id
 
     title.textContent = array[index].title;

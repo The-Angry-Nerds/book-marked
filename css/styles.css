@@ -79,10 +79,11 @@ footer {
     background: #8B90B4;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left:0;
     z-index: 100;
+    margin: 0;
 }
 
 .footerItem a {
@@ -206,8 +207,8 @@ ul.infoList {
   z-index: 10;
   top:0;
   left: 0px;
-  transform-origin: left;
-  box-shadow: 5px 5px 10px grey;
+  transform-origin: 0% 50%;
+  box-shadow: 5px 5px 10px black;
 }
 
 /* to make sure the books in index are not affected */
@@ -215,7 +216,7 @@ ul.infoList {
   display: block;
   transform: rotateY(45deg);
   transition-duration: 1s;
-  box-shadow: 10px 10px 20px grey;
+  box-shadow: 50px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .columns .book:hover .infoList{
