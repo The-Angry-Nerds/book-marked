@@ -3,6 +3,7 @@
 var tabsDiv = document.getElementById("tabs");
 var categDiv = document.getElementById("bookCateg");
 var empty = document.createElement("p");
+empty.setAttribute('class','nobooksAvailable');
 empty.innerHTML = `No books available`
 
 
@@ -91,7 +92,7 @@ function generateIndexBooks(index, array) {
     bookParent.setAttribute('style', 'display : inline-block; margin: 0px 1%;')
     image.setAttribute('class', 'cover');
 
-    image.setAttribute('src', '../images/cover2.jpg');
+    image.setAttribute('src', '../images/cover3.jpg');
     image.setAttribute('id',array[index].title); //to use as an target id
 
     title.textContent = array[index].title;
