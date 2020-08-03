@@ -97,7 +97,6 @@ footer {
 }
 
 
-
 /* Confirmation pop-up message */
 #confirm {
   display: none;
@@ -145,7 +144,6 @@ footer {
 }
 
 #secondDiv  a{
-
   margin-top: 50px;
   text-align: center;
   font-size: 24px;
@@ -156,7 +154,6 @@ footer {
 }
 
 #secondDiv  a:hover{
-  
   color: rgb(70, 53, 141);
   transition-duration: 0.5s ;
 
