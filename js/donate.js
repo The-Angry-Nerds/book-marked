@@ -2,6 +2,8 @@
 
 var confirmParent = document.getElementById("confirm");
 
+
+
 var donateForm = document.getElementById('Donateform');
 donateForm.addEventListener('submit', createBook);
 function createBook() {
@@ -9,17 +11,20 @@ function createBook() {
     var title = event.target.title.value;
     var author = event.target.author.value;
     var copies = Number(event.target.copies.value);
-    var city = event.target.city.value;
-    var location = event.target.dropLocation.value;
+    // var parsedCity = JSON.parse(event.target.city.value); 
+    var city = JSON.parse(event.target.city.value);
     var number = event.target.phoneNumber.value;
     var categories = event.target.categories.value;
 
-    new Book (title,author,copies,city,location,number,categories);
+    new Book (title,author,copies,city,number,categories);
 
 
     var jsonStringBooks = JSON.stringify(allBooks);
-
     localStorage.setItem('allBooks',jsonStringBooks);
+
+    // var jsonStringTitles = JSON.stringify(allTitles);
+    // localStorage.setItem('allTitles',jsonStringTitles);
+
     confirmParent.style.display = "block";
     donateForm.reset();
 

@@ -6,6 +6,7 @@ if (localStorage.getItem("name") === null ){
 
 var allBooks = [];
 var filteredBooks = [];
+// var allTitles = [];
 var user = document.getElementById("user");
 
 user.textContent=`Welcome ${localStorage.getItem("name")}`;
@@ -13,16 +14,19 @@ user.textContent=`Welcome ${localStorage.getItem("name")}`;
 if (localStorage.getItem('allBooks') !== null) {
     allBooks = JSON.parse(localStorage.getItem('allBooks'));
 };
+if (localStorage.getItem('allTitles') !== null) {
+    allTitles = JSON.parse(localStorage.getItem('allTitles'));
+};
 
 // Book object constructor
-function Book(title,author,copies,city,location,number,categories){
+function Book(title,author,copies,city,number,categories){
     this.title = title;
     this.author = author;
     this.copies = copies;
     this.city = city;
-    this.location = location;
     this.number = number;
     this.categories=categories
+    // allTitles.push(this.title) ; 
     allBooks.push(this);
 }
 

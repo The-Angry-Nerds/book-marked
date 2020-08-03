@@ -15,4 +15,4 @@ function getUserName(){
 
 function SaveInLocalStorage(name){
     localStorage.setItem("name",name);
-}
+} 
