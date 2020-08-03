@@ -31,8 +31,7 @@ function renderPopup(indexArray) {   //Render Pop up for either default or filte
         <li>Author: ${indexArray[index].author}</li>                
         <liCategory: >${indexArray[index].categories}</li>                
         <li>Available copies: ${indexArray[index].copies}</li>
-        <li>City: ${indexArray[index].city}</li>                
-        <li>Location: ${indexArray[index].location}</li>                  
+        <li>City: ${indexArray[index].city.name}</li>                
         <li>Contact info:${indexArray[index].number}</li>                
     </ul> `
         }

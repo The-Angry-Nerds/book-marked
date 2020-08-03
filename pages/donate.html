@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Donate A Book</title>
 </head>
 
@@ -14,7 +16,7 @@
         <nav class="h_nav">
             <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
             <ul class="link_nav">
-                <li><a href="../index.html">HOME</a></li>
+                <li><a  href="../index.html">HOME</a></li>
                 <li><a href="donate.html">DONATE</a></li>
                 <li><a href="library.html">LIBRARY</a></li>
             </ul>
@@ -35,28 +37,39 @@
                 <input class="input-donate" id="title" type="text" required placeholder="Title">
 
                 <!-- <label for="">Author</label> -->
-                <input class="input-donate" id="author" type="text" placeholder="Author">
+                <input class="input-donate" id="author" type="text" required placeholder="Author">
 
                 <!-- <label for="copies">Available copies</label> -->
-                <input class="input-donate" id="copies" type="number" placeholder="Copies">
+                <input class="input-donate" id="copies" type="number" min="1" value="1" placeholder="Copies">
 
                 <!-- <label for="city">City</label> -->
-                <input class="input-donate" id="city" type="text" required placeholder="City">
-
-                <!-- <label for="dropLocation">Drop location</label> -->
-                <input class="input-donate" id="dropLocation" type="text" required placeholder="Drop Location">
+                <!-- <input class="input-donate" id="city" type="text" required placeholder="City"> -->
 
                 <!-- <label for="phoneNumber">Phone Number</label> -->
-                <input class="input-donate" id="phoneNumber" type="tel" placeholder="Phone Number">
-                <div class="cat-container">
-                    <select id="categories" class="select-css">
-                        <option value="" disabled selected>Select your option</option>
-                        <option value="Drama">Drama</option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Informative">Informative</option>
+                <input class="input-donate" id="phoneNumber" type="tel" required placeholder="Phone Number">
+                <div class="city-container">
+                    <select id="city" class="select-css" required>
+                        <option value="" disabled selected>Select your city</option>
+                        <option value='{"lat":31.945368,"lng":35.928371,"name":"Amman"}
+                        '>Amman</option>
+                        <option value='{"lat":29.533991,"lng":35.00502,"name":"Aqaba"}
+                        '>Aqaba</option>
+                        <option value='{"lat":32.456957,"lng":35.847908,"name":"Irbid"}
+                        '>Irbid</option>
                     </select>
                 </div>
 
+
+
+                <label>Categories</label>
+                <input id="radioDrama" type="radio" name="categories" id="Drama" value="Drama" required />
+                <label for="Drama">Drama</label>
+
+                <input id="radioFantasy" type="radio" name="categories" id="Fantasy" value="Fantasy" />
+                <label for="Fantasy">Fantasy</label>
+
+                <input id="radioInformative" type="radio" name="categories" id="Informative" value="Informative" />
+                <label for="Informative">Informative</label>
                 <input class="donate-btn" type="submit" value="Donate">
 
             </fieldset>

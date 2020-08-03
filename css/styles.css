@@ -343,7 +343,7 @@ a{
     transition-duration: 0.5s;
     }
 
-.cat-container{
+.city-container{
     margin-left: 25%;
 }
 .select-css {
@@ -580,3 +580,22 @@ a{
   float: left;
 width: 50%;
 }
+
+/* Searchbar */
+
+.search-bar{
+  margin-top: 12px;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-image: w;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 90%; 
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd; 
+  margin-bottom: 12px;
+}
+

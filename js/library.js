@@ -3,10 +3,13 @@
 var columnOne = document.getElementById('column1');
 var columnTwo = document.getElementById('column2');
 var catDiv = document.getElementById("catButtons");
-console.log(allBooks);
+
+var searchBar = document.getElementById('myInput')
+
+var filteredSearchBooks = [];
 
 // create a div that has the books info 
-function generateBook(index,array){
+function generateBook(index, array) {
     var bookParent = document.createElement('div');
 
     var image = document.createElement('img');
@@ -16,7 +19,6 @@ function generateBook(index,array){
     var categories = document.createElement('li');
     var copies = document.createElement('li');
     var city = document.createElement('li');
-    var location = document.createElement('li');
     var number = document.createElement('li');
 
     //in the div
@@ -30,10 +32,9 @@ function generateBook(index,array){
     author.innerHTML = array[index].author;
     categories.innerHTML = array[index].categories;
     copies.innerHTML = array[index].copies;
-    city.innerHTML = array[index].city;
-    location.innerHTML = array[index].location;
+    city.innerHTML = array[index].city.name;
     number.innerHTML = array[index].number;
-    
+
     //button w/ added an onClick event
     var remove = document.createElement('button');
     remove.textContent = 'take book';
@@ -44,7 +45,6 @@ function generateBook(index,array){
     info.append(categories)
     info.append(copies);
     info.append(city);
-    info.append(location);
     info.append(number);
     bookParent.append(image);
     bookParent.append(info);
@@ -55,14 +55,14 @@ function generateBook(index,array){
 
 
 // append the created div that has the info to the two columns in the html page
-function fillCol( array ){
+function fillCol(array) {
     for (let index = 0; index < array.length; index++) {
         var childdiv;
         if (index % 2 == 0) {
-            childdiv=generateBook(index,array);
+            childdiv = generateBook(index, array);
             columnOne.appendChild(childdiv);
-        }else{
-            childdiv=generateBook(index,array);
+        } else {
+            childdiv = generateBook(index, array);
             columnTwo.appendChild(childdiv);
         }
     }
@@ -81,17 +81,19 @@ function removeBook(index) {
 
 
 // clear the content of the columns
-function clearCol(){
-    columnOne.textContent="";
-    columnTwo.textContent="";
+function clearCol() {
+    columnOne.textContent = "";
+    columnTwo.textContent = "";
 }
 
+var catId;
 
-catDiv.addEventListener('click',generateBookByCat);
-function generateBookByCat(){
+catDiv.addEventListener('click', generateBookByCat);
+function generateBookByCat() {
 
+    searchBar.value = ''; // clear Search bar content
     clearCol();
-    var catId = event.target.id;
+    catId = event.target.id;
     if (catId !== "allCat") {
         filterByCat(catId);
         fillCol(filteredBooks); //filtered books and their function in the app.js    
@@ -99,6 +101,36 @@ function generateBookByCat(){
         fillCol(allBooks);
     }
 
+}
+
+
+
+// Search Bar function
+
+var searchString;
+
+searchBar.addEventListener('keyup', (e) => {
+    searchString = e.target.value.toLowerCase();
+    filteredSearchBooks = [];
+    if (catId == undefined || catId == 'allCat') {
+        searchBarLoop(allBooks);
+    }
+    else {
+        searchBarLoop(filteredBooks);
+
+    }
+    clearCol();
+    fillCol(filteredSearchBooks);
+});
+
+// search bar for loop
+
+function searchBarLoop(array) {
+    for (let index = 0; index < array.length; index++) {
+        if (array[index].title.toLowerCase().includes(searchString) || (array[index].author.toLowerCase().includes(searchString)))  {
+            filteredSearchBooks.push(array[index])
+        }
+    }
 }
 
 // main function here 
