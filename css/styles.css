@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Satisfy&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@300&display=swap');
 
-/* font-family: 'Caveat', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Tangerine', cursive; */
+/* font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif; */
 /* general styles */
 body{
   text-align: center;
   margin: 0;
-  background-color: #572e24; 
-  font-family: 'Satisfy', cursive;
+  background-color:#dedbd1 ; 
+  font-family: 'Merienda', cursive;
+  /* color:#a91f1e; */
+
 }
 
 main{
-  width: 800px;
+  width: 960px;
   display: inline-block;
-  background-color: #ddd4c8;
+  background-color: #dedbd1 ;
   height: 100%;
   min-height: 600px;
   padding-bottom: 60px;
@@ -24,10 +25,10 @@ main{
 }
 
 header, footer{
-  background-color:#ddd4c8 ;
-  color: #7c0f2a;
-  font-family: 'Tangerine', cursive;
-  font-size: 26px;
+  background-color: #2C3743 ;
+  color: #b9a666;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
 
 }
 .centerHead{
@@ -72,7 +73,7 @@ header ul {
 }
 
 .link_nav li a:hover{
-  color:#2C3743;
+  color: white;
 }
 a:visited{
   color: inherit;
@@ -95,6 +96,11 @@ footer {
   text-decoration: none;
 
 }
+a{
+  text-decoration: none;
+  color:#b9a666;
+
+}
 
 
 /* Confirmation pop-up message */
@@ -112,10 +118,9 @@ footer {
 }
   
 #secondDiv  {
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  background-color: #b9a666;
+  padding: 40px;
+  width: 60%;
   height: 200px;
   align-content: center;
   margin: auto;
@@ -123,7 +128,7 @@ footer {
   
 /* The Close Button */
 #span {
-  color: #aaaaaa;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -131,7 +136,7 @@ footer {
 
 
 #span:hover {
-  color: #464545;
+  color: white;
   cursor: pointer;
 }
   
@@ -139,6 +144,7 @@ footer {
   text-align: center;
   font-size: 40px;
   color: #2C3743;
+  padding-top: 10px;
   padding-bottom: 15px;
   font-weight: bolder;
 }
@@ -148,13 +154,13 @@ footer {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  color: black;
+  color: #2C3743;
   display: block; 
   text-decoration: underline;
 }
 
 #secondDiv  a:hover{
-  color: rgb(70, 53, 141);
+  color: white;
   transition-duration: 0.5s ;
 
 }
@@ -167,8 +173,8 @@ ul.infoList {
   left: 0;
   background-color: white;
   width:195px;
-  height: 185px;
-  padding: 25px 5px 5px 5px;
+  height: 170px;
+  padding: 40px 5px 5px 5px;
   padding-inline-start: 0px;
   z-index: 9;
   color: #2C3743;
@@ -177,8 +183,7 @@ ul.infoList {
 .infoList li {
   list-style-type: none;
   border-bottom: 1px solid rgb(214, 214, 214);
-  font-family: 'Caveat', cursive;
-  font-size: 1.2em;
+  margin-bottom: 7px;
 }
 .book {
   position: relative;
@@ -190,14 +195,14 @@ ul.infoList {
   width: 100px;
   height: 40px;
   border: none;
-  background-color: white;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.3em;
+  background-color: #2C3743;
+  color: white;
+  font-family: inherit;
 }
 .removeButton:hover{
   cursor: pointer;
   transform: scale(1.05);
-  background-color: #2C3743;
+  background-color: #b9a666 ;
   transition-duration: 0.2s;
   color: white;
 
@@ -247,8 +252,8 @@ div.emptyPage {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid #2C3743;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.3em;
+  font-family: 'Merienda', cursive;
+  font-size: 1.05em;
   /* vertical-align: bottom; */
 
 }
@@ -260,15 +265,15 @@ div.emptyPage {
 
 }
 #catButtons button:hover,.tab button:hover{
-  border-bottom: 1px solid #ddd4c8;
+  border-bottom: 1px solid #dedbd1;
   cursor: pointer;
-  background-color: #ddd4c8;
+  background-color:#dedbd1 ; 
   box-shadow: 5px -3px 3px #2c374398;
 }
 #catButtons button:focus,.tab button:focus{
   outline: none;
-  background-color: #ddd4c8;
-  border-bottom: 1px solid #ddd4c8;
+  background-color:#dedbd1 ; 
+  border-bottom: 1px solid #dedbd1;
   box-shadow: 5px -3px 3px #2c374398;
 
 }
@@ -284,23 +289,22 @@ div.emptyPage {
 /* index styles */
 #figure-logo{
   background-color: white;
-  background-image: url(../images/old-paper.jpg);
+  background-image: url(../images/old-paper2.jpg);
   background-size: cover;
+  
   padding: 20px;
   box-shadow: 0px 5px 10px #2C3743;
   height: 200px;
 }
 
 #logo{
-  padding-right: 21px;
-  font-size: 50px;
-  font-family: 'Tangerine', cursive;
+  width: 200px;
 }
 
 #description {
-  font-family: 'Satisfy', cursive;
+  /* font-family: 'Satisfy', cursive; */
   word-spacing: 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.2;
   padding: 20px;
   color: #2C3743;
@@ -312,15 +316,17 @@ div.emptyPage {
 
 .buttons-index{
   display: inline-block;
-  background-image: url('../images/old-paper.jpg');
+  background-image: url('../images/old-paper2.jpg');
   width: 250px;
   height: 100px;
-  margin: 25px;
+  margin: 25px 55px;
   padding-top: 65px;
   border-radius: 3px;
   text-align: center;
-  font-size: 35px;
-  font-family: 'Tangerine', cursive;
+  font-size: 20px;
+  box-shadow: 0px 5px 10px #2C3743;
+  background-size: cover;
+  font-family: 'Merienda', cursive;
 }
 .buttons-index:hover{
   transform: scale(1.05);
@@ -333,9 +339,8 @@ div#categories{
 }
 
 #popUpInfo {
-  /* background-color: #2C3743; */
-  background-color: #572e24;
-  color: #ddd4c8;
+  background-color: #b9a666;
+  color: #2C3743;
   position: absolute;
   width: 25%;
   height: 250px;
@@ -345,6 +350,8 @@ div#categories{
   z-index: 99;
   display: none;
   border-radius: 3px;
+  box-shadow: 0px 5px 10px #2C3743;
+
 }
 #popUpInfo ul{
   padding-top: 50px;
@@ -358,13 +365,12 @@ div#categories{
 
 }
 #categText{
-  font-family: 'Satisfy', cursive;
+  /* font-family: 'Satisfy', cursive; */
   background-color: white;
   height: 75px;  
   text-align: center;
   line-height: 70px;
   font-size: 35px;
-  color: #2C3743;
 }
 .banner{
   width: 200px;
@@ -376,30 +382,31 @@ div#categories{
 
 .titleAuthor {
   position: absolute;
-  top:110px;
-  left: 0px;
+  top:100px;
+  left: 20px;
   z-index: 11;
   color: #ddd4c8; 
   width: max-content;
 }
 .titleAuthor li{
-  width: 200px;
-  font-size: 1.1em;
+  margin-bottom: 10px;
+  width: 160px;
   text-shadow: 1px 1px 3px black;
 }
+
+/* ul.titleAuthor:first-child{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+} */
 
 
 
 /* Donate Form */
-a{
-  text-decoration: none;
-  font-weight: 500;
-  color: #7c0f2a
 
-}
 
 .columns {
   display: inline-block;
+  vertical-align: top;
 }
 
 .fieldset-donate{
@@ -422,7 +429,7 @@ a{
   margin-top: 6%;
   margin-bottom: 2%;
   font-size: 48px;
-  font-family: 'Tangerine', cursive;
+  /* font-family: 'Tangerine', cursive; */
 }
 
 .donate-subtitle{
@@ -433,7 +440,7 @@ a{
 .title-container{
   margin-bottom: 5%;
   padding:20px;
-  background-image: url(../images/old-paper.jpg);
+  background-image: url(../images/old-paper2.jpg);
   background-size: cover;
   box-shadow: 0px 5px 10px #2C3743;
 
@@ -454,7 +461,7 @@ a{
   outline: none;
   background-color: white;
   color: #2C3743;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Merienda', cursive;
 }
 
 
@@ -463,19 +470,18 @@ a{
   display: inline;
   color: white;
   background-color: #2C3743 ;
-  font-size: 22px;
-  border-radius: 3px;
+  font-size: 18px;
   width: fit-content;
   text-align: left;
-  margin-top: 8%;
   margin-left: auto;
   margin-right: auto;
   bottom: 10px;
-  font-family: 'Tangerine', cursive;
+  font-family: inherit;
+  border: none;
 }
 
 .donate-btn:hover{
-  /* background-color: #8B90B4 ; */
+  background-color: #b9a666 ;
   transform: scale(1.05);
   transition-duration: 0.5s;
   cursor: pointer;
@@ -487,42 +493,41 @@ a{
 .select-css {
 	display: block;
 	font-size: 16px;
-	font-weight: 700;
-	color: #444;
-	line-height: 1.3;
 	padding: 10px 15px 10px 10px;
   width: 65%;
-  margin-right: 0px;
-	box-sizing: border-box;
-	margin: 0;
+	margin: 30px 0px;
 	border: 1px solid #aaa;
 	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-	border-radius: .5em;
-	-moz-appearance: none;
-	-webkit-appearance: none;
 	appearance: none;
-	background-color: #fff;
-	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-  linear-gradient(to bottom, #c58f8f 0%,#c58f8f 100%);
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
-	background-size: .65em auto, 100%;
+  background-size: .65em auto, 100%;
+  font-family: 'Merienda', cursive;
+
 }
 .select-css::-ms-expand {
-	display: none;
+  display: none;
+
 }
 .select-css:hover {
-	border-color: #888;
+  border-color: #888;
+  cursor: pointer;
 }
 .select-css:focus {
 	border-color: #aaa;
-	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-	box-shadow: 0 0 0 3px -moz-mac-focusring;
 	color: #222;
 	outline: none;
 }
 .select-css option {
 	font-weight:normal;
+}
+[type="radio"]{
+  margin-left: 10px;
+}
+
+[type="radio"]:hover{
+  cursor: pointer;
 }
 /* About me */
 
@@ -569,3 +574,8 @@ width: 50%;
   margin-bottom: 12px;
 }
 
+.gm-style .gm-style-iw {
+  /* background-color: #dedbd1 ; */
+  border-radius: 3px;
+  font-family: 'Merienda', cursive;
+}

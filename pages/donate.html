@@ -16,7 +16,7 @@
         <nav class="h_nav">
             <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
             <ul class="link_nav">
-                <li><a  href="../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="donate.html">Donate</a></li>
                 <li><a href="library.html">Library</a></li>
                 <li><a href="map.html">Map</a></li>
@@ -45,6 +45,17 @@
                 <input class="input-donate" id="copies" type="number" min="1" value="1" placeholder="Copies">
 
                 <input class="input-donate" id="phoneNumber" type="tel" required placeholder="Phone Number">
+
+                <label>Categories</label>
+                <input id="radioDrama" type="radio" name="categories" id="Drama" value="Drama" required />
+                <label for="Drama">Drama</label>
+
+                <input id="radioFantasy" type="radio" name="categories" id="Fantasy" value="Fantasy" />
+                <label for="Fantasy">Fantasy</label>
+
+                <input id="radioInformative" type="radio" name="categories" id="Informative" value="Informative" />
+                <label for="Informative">Informative</label>
+
                 <div class="city-container">
                     <select id="city" class="select-css" required>
                         <option value="" disabled selected>Select your city</option>
@@ -58,18 +69,9 @@
                     </select>
                 </div>
 
-
-
-                <label>Categories</label>
-                <input id="radioDrama" type="radio" name="categories" id="Drama" value="Drama" required />
-                <label for="Drama">Drama</label>
-
-                <input id="radioFantasy" type="radio" name="categories" id="Fantasy" value="Fantasy" />
-                <label for="Fantasy">Fantasy</label>
-
-                <input id="radioInformative" type="radio" name="categories" id="Informative" value="Informative" />
-                <label for="Informative">Informative</label>
                 <input class="donate-btn" type="submit" value="Donate">
+
+
 
             </fieldset>
         </form>
@@ -85,9 +87,6 @@
             <ul class="link_nav">
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="tel:079123455">Call Us</a></li>
-                <a href="http://www.instagram.com" class="fa fa-instagram"></a>
-                <a href="http://www.facebook.com" class="fa fa-facebook"></a>
-
             </ul>
         </div>
 
