@@ -27,7 +27,7 @@ function generateBook(index, array) {
     image.setAttribute('src', 'https://place-hold.it/200x250');
     info.setAttribute('class', 'infoList');
 
-    //li elements
+    //li elements 
     title.innerHTML = array[index].title;
     author.innerHTML = array[index].author;
     categories.innerHTML = array[index].categories;

@@ -2,6 +2,8 @@
 
 var confirmParent = document.getElementById("confirm");
 
+
+
 var donateForm = document.getElementById('Donateform');
 donateForm.addEventListener('submit', createBook);
 function createBook() {
@@ -9,7 +11,7 @@ function createBook() {
     var title = event.target.title.value;
     var author = event.target.author.value;
     var copies = Number(event.target.copies.value);
-    // var parsedCity = JSON.parse(event.target.city.value);
+    // var parsedCity = JSON.parse(event.target.city.value); 
     var city = JSON.parse(event.target.city.value);
     var number = event.target.phoneNumber.value;
     var categories = event.target.categories.value;

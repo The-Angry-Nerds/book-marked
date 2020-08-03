@@ -26,7 +26,7 @@ function Book(title,author,copies,city,number,categories){
     this.city = city;
     this.number = number;
     this.categories=categories
-    // allTitles.push(this.title);
+    // allTitles.push(this.title) ; 
     allBooks.push(this);
 }
 
