@@ -16,7 +16,7 @@ var marker, i;
 for (i = 0; i < allBooks.length; i++) {
     var randomOff = Math.random() * (0.13 + 0.10) - 0.1;
     console.log(randomOff);
-    infowindow = new google.maps.InfoWindow({       //Please Style the info window on maps
+    infowindow = new google.maps.InfoWindow({       //Please Style the info window on maps 
         content: 'Title: ' + allBooks[i].title +
             '<br><br> Author: ' + allBooks[i].author +
             '<br><br> Phone Number: ' + allBooks[i].number

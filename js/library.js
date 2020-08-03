@@ -32,7 +32,7 @@ function generateBook(index, array) {
 
     info.setAttribute('class', 'infoList');
 
-    //li elements
+    //li elements 
     title.innerHTML = array[index].title;
     author.innerHTML = array[index].author;
     categories.innerHTML = array[index].categories;

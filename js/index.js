@@ -20,7 +20,7 @@ function showPopUp() {
     }
 }
 
-function renderPopup(indexArray) {   //Render Pop up for either default or filtered books
+function renderPopup(indexArray) {   //Render Pop up for either default or filtered books 
 
     for (let index = 0; index < indexArray.length && index < 3; index++) {
         if (event.target.id == indexArray[index].title) {
