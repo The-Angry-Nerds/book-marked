@@ -8,11 +8,13 @@ var searchBar = document.getElementById('myInput')
 
 var filteredSearchBooks = [];
 
+
 // create a div that has the books info 
 function generateBook(index, array) {
     var bookParent = document.createElement('div');
 
     var image = document.createElement('img');
+    var emptyPage = document .createElement('div')
     var info = document.createElement('ul');
     var title = document.createElement('li');
     var author = document.createElement('li');
@@ -23,8 +25,11 @@ function generateBook(index, array) {
 
     //in the div
     bookParent.setAttribute('class', 'book');
+    emptyPage.setAttribute('class','emptyPage');
     image.setAttribute('class', 'cover');
-    image.setAttribute('src', 'https://place-hold.it/200x250');
+    image.setAttribute('src', '../images/cover3.jpg');
+    
+
     info.setAttribute('class', 'infoList');
 
     //li elements
@@ -39,6 +44,7 @@ function generateBook(index, array) {
     var remove = document.createElement('button');
     remove.textContent = 'take book';
     remove.setAttribute('onclick', 'removeBook(' + index + ')');
+    remove.setAttribute('class','removeButton');
 
     info.append(title);
     info.append(author);
@@ -47,6 +53,7 @@ function generateBook(index, array) {
     info.append(city);
     info.append(number);
     bookParent.append(image);
+    bookParent.append(emptyPage);
     bookParent.append(info);
     bookParent.append(remove);
 
