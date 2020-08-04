@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@300&display=swap');
 
+
 /* User name */
 
 
@@ -75,6 +76,7 @@ body, html {
 * {
     box-sizing: border-box;
     font-family: 'Merienda', cursive;
+
 }
   
 .bg-image {
