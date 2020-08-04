@@ -25,7 +25,8 @@ function Book(title,author,copies,city,number,categories){
     this.copies = copies;
     this.city = city;
     this.number = number;
-    this.categories=categories
+    this.categories=categories;
+    this.taken = false;
     // allTitles.push(this.title) ; 
     allBooks.push(this);
 }

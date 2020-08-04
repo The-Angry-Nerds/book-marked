@@ -41,7 +41,7 @@ function generateBook(index, array) {
     title.innerHTML = array[index].title;
     author.innerHTML = array[index].author;
     categories.innerHTML = array[index].categories;
-    copies.innerHTML = array[index].copies;
+    copies.innerHTML =array[index].copies;
     city.innerHTML = array[index].city.name;
     number.innerHTML = array[index].number;
 
