@@ -60,3 +60,8 @@ function filterByCat( categ ){
         }
     }
 }
+
+function changeUser(){
+    localStorage.removeItem('name');
+    location.reload(); 
+}
