@@ -2,7 +2,7 @@
 
 
 if (localStorage.getItem("name") === null ){
-    window.location.replace('../../pages/user.html');
+    window.location.replace('../../book-marked/pages/user.html');
 }
 
 var allBooks = [];
