@@ -3,6 +3,7 @@
 var columnOne = document.getElementById('column1');
 var columnTwo = document.getElementById('column2');
 var catDiv = document.getElementById("catButtons");
+var bookTitle;
 
 var searchBar = document.getElementById('myInput')
 
@@ -51,10 +52,10 @@ function generateBook(index, array) {
     onCoverauthor.innerHTML = 'By: ' + array[index].author;
 
     //button w/ added an onClick event
-    var remove = document.createElement('button');
-    remove.textContent = 'Take book';
-    remove.setAttribute('onclick', 'removeBook(' + index + ')');
-    remove.setAttribute('class', 'removeButton');
+    var order = document.createElement('button');
+    order.textContent = 'Take book';
+    order.setAttribute('onclick', 'ConfirmBook(' + index + ')');
+    order.setAttribute('class', 'removeButton');
 
     info.append(title);
     info.append(author);
@@ -68,7 +69,7 @@ function generateBook(index, array) {
     bookParent.append(emptyPage);
     bookParent.append(info);
     bookParent.append(onCoverInfo);
-    bookParent.append(remove);
+    bookParent.append(order);
 
 
     return bookParent;
@@ -89,15 +90,37 @@ function fillCol(array) {
     }
 }
 
+var catId;
 
 // remove book from the list of availabe books (allBooks) permenantly 
 function removeBook(index) {
-    console.log('Start of function');
+    debugger
+    BookTitle(index)
     var allBooks = JSON.parse(localStorage.getItem('allBooks'));
-    allBooks.splice(index, 1);
+    var outerIndex;
+    for (let i = 0; i < allBooks.length; i++) {
+        if (allBooks[i].title == bookTitle) {
+            outerIndex = i
+        }
+    }
+    allBooks.splice(outerIndex, 1);
     allBooks = JSON.stringify(allBooks);
     localStorage.setItem("allBooks", allBooks);
     location.reload();
+};
+
+// book title loop
+
+
+function BookTitle(index) {
+    var removeArray = [];
+    if (catId == undefined || catId == 'allCat') {
+        removeArray = allBooks;
+    }
+    else {
+        removeArray = filteredBooks;
+    }
+    bookTitle = removeArray[index].title;
 }
 
 
@@ -107,7 +130,6 @@ function clearCol() {
     columnTwo.textContent = "";
 }
 
-var catId;
 
 catDiv.addEventListener('click', generateBookByCat);
 function generateBookByCat() {
@@ -154,6 +176,57 @@ function searchBarLoop(array) {
     }
 }
 
+// Confirmation pop up function
+
+var confirmParent = document.getElementById("confirm");
+var span = document.createElement("span");
+var text = document.createElement('p');
+var secondDiv = document.createElement("div")
+function ConfirmModal() {
+    secondDiv.setAttribute('id', 'secondDiv');
+    span.setAttribute('id', 'span');
+    span.innerHTML = 'x';
+    var confirm = document.createElement('p');
+    confirm.setAttribute('id', 'confirmationMsg');
+    confirm.textContent = 'Confirm your order';
+    var cancelButton = document.createElement('button');
+    cancelButton.textContent = 'Cancel'
+    cancelButton.setAttribute('class', 'removeButton');
+    cancelButton.onclick = function () {
+        confirmParent.style.display = 'none';
+    }
+    secondDiv.append(span);
+    secondDiv.append(confirm);
+    secondDiv.append(text);
+    secondDiv.append(cancelButton);
+    confirmParent.append(secondDiv);
+
+};
+
+function ConfirmBook(index) {
+    BookTitle(index)
+    text.innerHTML = 'Your book is: ' + bookTitle;
+    var confirmButton = document.createElement('button');
+    confirmButton.textContent = 'Confirm'
+    confirmButton.setAttribute('class', 'removeButton');
+    confirmButton.setAttribute('onclick', 'removeBook(' + index + ')');
+    secondDiv.append(confirmButton);
+    confirmParent.style.display = 'block';
+};
+
+
+
+span.onclick = function () {
+    confirmParent.style.display = 'none';
+}
+window.onclick = function (event) {
+    if (event.target == confirmParent) {
+        confirmParent.style.display = 'none';
+    };
+};
+
+
 // main function here 
 
 fillCol(allBooks);
+ConfirmModal();
