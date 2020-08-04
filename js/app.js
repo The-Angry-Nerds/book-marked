@@ -1,9 +1,5 @@
 'use strict'
 
-console.log(window.location.href);
-
-
-
 if (localStorage.getItem("name") === null) {
     if (window.location.href == "https://the-angry-nerds.github.io/book-marked/index.html") {
         window.location.replace('/pages/user.html');
@@ -12,7 +8,6 @@ if (localStorage.getItem("name") === null) {
         window.location.replace('../pages/user.html');
     }
 }
-
 
 var allBooks = [];
 var filteredBooks = [];
