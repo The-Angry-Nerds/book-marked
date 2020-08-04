@@ -8,7 +8,6 @@ function getUserName(){
     event.preventDefault();
     var name = welcome.name.value;
     SaveInLocalStorage(name);
-    console.log(localStorage);
     window.location.replace('../index.html');
 
 }
@@ -16,3 +15,5 @@ function getUserName(){
 function SaveInLocalStorage(name){
     localStorage.setItem("name",name);
 } 
+
+localStorage.setItem('defaultOnce',false);
