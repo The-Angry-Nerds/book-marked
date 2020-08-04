@@ -13,6 +13,7 @@ if (localStorage.getItem("name") === null) {
     }
 }
 
+
 var allBooks = [];
 var filteredBooks = [];
 // var allTitles = [];
