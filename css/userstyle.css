@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Satisfy&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@300&display=swap');
+
 
 /* User name */
 
@@ -74,7 +75,7 @@ body, html {
   
 * {
     box-sizing: border-box;
-    font-family: 'Caveat', cursive;
+    font-family: 'Merienda', cursive;
 
 }
   
@@ -100,14 +101,14 @@ body, html {
 
 /* Header */
 nav ,.h_nav{
-    font-family: 'Tangerine', cursive; 
+    font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    background-color: #ddd4c8;
+    background-color: #2C3743;
     padding: 10px;
-    font-size: 2em;
-    color: #7c0f2a;
+    font-size: 1.2em;
+    color: #b9a666;
 }
 
 
