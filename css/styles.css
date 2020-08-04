@@ -195,18 +195,20 @@ footer {
   text-align: center;
 }
 
+
+
 .buttons-index{
     
     display: inline-block;
 
     background-image: url('../images/give.jpg');
-    width: 200px;
+    width: 350px;
     height: 100%;
 
     margin: 25px;
     padding-top: 45px;
     border-radius: 3px;
-    margin-right: 175px;
+    
     margin-left: 20px;
     text-align: center;
 }
@@ -386,7 +388,7 @@ a{
 .select-css option {
 	font-weight:normal;
 }
-#categText{
+/* #categText{
     background-color: white;
     height: 75px;
     
@@ -396,8 +398,8 @@ a{
     text-overflow: clip ;
     font-family: "montserrat", sans-serif;
     font-size: 30px;
-}
-#categText:hover{
+} */
+/* #categText:hover{
     text-indent:"categories";
     background-color: #8B90B4 ;
     transition-duration: inherit;
@@ -410,15 +412,27 @@ a{
     
 
 
+} */
+
+.paddingtop {
+  padding-top: 100px;
+  background-color: white;
+  height: 100%;
 }
 .tab {
-    overflow: hidden;
+    /* ss */
     background-color: inherit;
     text-align: center;
+    height: 50px;
+
+  
     
    
 
    
+  }
+  .tablinks:hover{
+    border-bottom: 3px solid black;
   }
   .tab button {
       margin-left: 100px;
@@ -430,7 +444,7 @@ a{
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    text-decoration-line: underline;
+    
    
   }
   .tab button:hover {
