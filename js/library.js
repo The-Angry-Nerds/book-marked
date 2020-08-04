@@ -14,7 +14,7 @@ function generateBook(index, array) {
     var bookParent = document.createElement('div');
 
     var image = document.createElement('img');
-    var emptyPage = document .createElement('div')
+    var emptyPage = document.createElement('div')
     var info = document.createElement('ul');
     var title = document.createElement('li');
     var author = document.createElement('li');
@@ -30,11 +30,11 @@ function generateBook(index, array) {
 
     //in the div
     bookParent.setAttribute('class', 'book');
-    emptyPage.setAttribute('class','emptyPage');
+    emptyPage.setAttribute('class', 'emptyPage');
     image.setAttribute('class', 'cover');
     image.setAttribute('src', '../images/cover3.jpg');
 
-    onCoverInfo.setAttribute('class','titleAuthor');
+    onCoverInfo.setAttribute('class', 'titleAuthor');
     info.setAttribute('class', 'infoList');
 
     //li elements 
@@ -46,13 +46,15 @@ function generateBook(index, array) {
     number.innerHTML = array[index].number;
 
     onCovertitle.innerHTML = array[index].title;
-    onCoverauthor.innerHTML = array[index].author;
+    onCovertitle.setAttribute('id', 'on-cover-title');
+
+    onCoverauthor.innerHTML = 'By: ' + array[index].author;
 
     //button w/ added an onClick event
     var remove = document.createElement('button');
-    remove.textContent = 'take book';
+    remove.textContent = 'Take book';
     remove.setAttribute('onclick', 'removeBook(' + index + ')');
-    remove.setAttribute('class','removeButton');
+    remove.setAttribute('class', 'removeButton');
 
     info.append(title);
     info.append(author);
@@ -146,7 +148,7 @@ searchBar.addEventListener('keyup', (e) => {
 
 function searchBarLoop(array) {
     for (let index = 0; index < array.length; index++) {
-        if (array[index].title.toLowerCase().includes(searchString) || (array[index].author.toLowerCase().includes(searchString)))  {
+        if (array[index].title.toLowerCase().includes(searchString) || (array[index].author.toLowerCase().includes(searchString))) {
             filteredSearchBooks.push(array[index])
         }
     }

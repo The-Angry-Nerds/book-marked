@@ -92,11 +92,13 @@ function generateIndexBooks(index, array) {
     image.setAttribute('class', 'cover');
     info.setAttribute('class','titleAuthor');
 
+    title.setAttribute('id', 'on-cover-title');
+
     image.setAttribute('src', 'images/cover3.jpg');
     image.setAttribute('id',array[index].title); //to use as a target id
 
     title.textContent = array[index].title;
-    author.textContent = array[index].author;
+    author.textContent = 'By: ' + array[index].author;
 
     info.append(title);
     info.append(author);
