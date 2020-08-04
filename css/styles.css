@@ -228,14 +228,6 @@ ul.infoList {
   transition-duration: 1s;
   transition-delay: 0s;
 }
-.titleAuthor{
-  font-family: 'Cinzel', serif;
-}
-
-#on-cover-title{
-  font-size: 28px;
-  margin-bottom: 25px;
-}
 
 .columns .book:hover .infoList{
   transform: translate(120px ,0px);
@@ -387,25 +379,31 @@ div#categories{
   margin-bottom: 20px ;
 }
 
+
 .titleAuthor {
   position: absolute;
   top:75px;
-  left: 20px;
-
+  left: 25px;
+  font-family: 'Cinzel', serif;
   z-index: 11;
-  color: #ddd4c8; 
-  width: max-content;
+  color: #ddd4c8e3; 
 }
 .titleAuthor li{
   margin-bottom: 10px;
-  width: 160px;
-  text-shadow: 1px 1px 3px black;
+  width: 150px;
+  height: 50px;
+  text-shadow: 1px 1px 3px black ;
+  font-size: 15px;
+  text-overflow: ellipsis;
+
+}
+li.on-cover-title{
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* ul.titleAuthor:first-child{
-  font-size: 1.2em;
-  margin-bottom: 10px;
-} */
+
 
 
 

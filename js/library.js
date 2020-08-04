@@ -46,7 +46,7 @@ function generateBook(index, array) {
     number.innerHTML = array[index].number;
 
     onCovertitle.innerHTML = array[index].title;
-    onCovertitle.setAttribute('id', 'on-cover-title');
+    onCovertitle.setAttribute('class', 'on-cover-title');
 
     onCoverauthor.innerHTML = 'By: ' + array[index].author;
 
