@@ -1,15 +1,18 @@
 'use strict'
 
-alert(window.location.href);
 
 if (localStorage.getItem("name") === null) {
     if (window.location.href == "https://the-angry-nerds.github.io/book-marked/index.html" || 'https://the-angry-nerds.github.io/book-marked/' == window.location.href) {
         window.location.replace('/pages/user.html');
         console.log('home')
+        alert(window.location.href);
+
     }
     else {
         window.location.replace('../pages/user.html');
                 console.log('other pages')
+        alert(window.location.href);
+
     }
 }
 
