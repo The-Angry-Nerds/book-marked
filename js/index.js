@@ -2,9 +2,7 @@
 
 var tabsDiv = document.getElementById("tabs");
 var categDiv = document.getElementById("bookCateg");
-var empty = document.createElement("p");
-empty.setAttribute('class','nobooksAvailable');
-empty.innerHTML = `No books available`
+
 
 
 var popUpDiv = document.getElementById('popUpInfo');

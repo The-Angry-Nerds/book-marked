@@ -78,6 +78,11 @@ function generateBook(index, array) {
 
 // append the created div that has the info to the two columns in the html page
 function fillCol(array) {
+    if (array.length == 0) {
+        console.log('empty');
+        columnOne.appendChild(empty);
+    }
+
     for (let index = 0; index < array.length; index++) {
         var childdiv;
         if (index % 2 == 0) {
@@ -94,7 +99,6 @@ var catId;
 
 // remove book from the list of availabe books (allBooks) permenantly 
 function removeBook(index) {
-    debugger
     BookTitle(index)
     var allBooks = JSON.parse(localStorage.getItem('allBooks'));
     var outerIndex;
