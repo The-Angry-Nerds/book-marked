@@ -39,12 +39,12 @@ function generateBook(index, array) {
     info.setAttribute('class', 'infoList');
 
     //li elements 
-    title.innerHTML = array[index].title;
-    author.innerHTML = array[index].author;
-    categories.innerHTML = array[index].categories;
-    copies.innerHTML = array[index].copies;
-    city.innerHTML = array[index].city.name;
-    number.innerHTML = array[index].number;
+    title.innerHTML = `Title: ${array[index].title}`;
+    author.innerHTML = `Author: ${array[index].author}`;
+    categories.innerHTML = `Categ: ${array[index].categories}`;
+    copies.innerHTML = `Available Copies: ${array[index].copies}`;
+    city.innerHTML = `City: ${array[index].city.name}`;
+    number.innerHTML = `Tel: ${array[index].number}`;
 
     onCovertitle.innerHTML = array[index].title;
     onCovertitle.setAttribute('class', 'on-cover-title');
