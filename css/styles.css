@@ -122,6 +122,7 @@ a{
   height: 200px;
   align-content: center;
   margin: auto;
+  border: 3px solid white;
 }
   
 /* The Close Button */
@@ -206,6 +207,10 @@ ul.infoList {
   color: white;
 
 }
+.removeButton:active , .removeButton:focus{
+  outline: none;
+}
+
 .cover , div.emptyPage{
   position: absolute;
   z-index: 10;
@@ -218,13 +223,13 @@ ul.infoList {
 /* to make sure the books in index are not affected */
 .columns .book:hover .cover{ 
   display: block;
-  transform: rotateY(45deg);
+  transform: rotateY(50deg);
   transition-duration: 1s;
   box-shadow: 50px 5px 30px rgba(0, 0, 0, 0.5);
 }
 .columns .book:hover .titleAuthor{
   transform-origin: 0% 50%;
-  transform: rotateY(45deg);
+  transform: rotateY(50deg);
   transition-duration: 1s;
   transition-delay: 0s;
 }
@@ -284,6 +289,36 @@ div.emptyPage {
   padding:25px
 }
 
+.confirmButtons{
+  margin: 25px 5px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #2C3743;
+  color:#b9a666 ; 
+  font-family: inherit;
+  font-size: 18px;
+}
+.confirmButtons:hover{
+  color:#dedbd1 ; 
+  transform: scale(1.1);
+
+}
+.confirmButtons:active , .confirmButtons:focus{
+  outline: none;
+}
+p#bookConfirm {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color:#dedbd1 ; 
+
+}
+p#bookConfirmTitle{
+  font-size: 25px;
+
+
+}
+
 
 /* index styles */
 #figure-logo{
@@ -338,17 +373,17 @@ div#categories{
 }
 
 #popUpInfo {
+  border: 3px solid white;
   background-color: #b9a666;
   color: #2C3743;
   position: absolute;
-  width: 25%;
+  width: 20%;
   height: 250px;
   padding: 30px;
   top: 0px;
-  left: 35%;
+  left: 36%;
   z-index: 99;
   display: none;
-  border-radius: 3px;
   box-shadow: 0px 5px 10px #2C3743;
 
 }
