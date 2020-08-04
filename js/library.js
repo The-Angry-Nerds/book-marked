@@ -187,11 +187,12 @@ function ConfirmModal() {
     span.setAttribute('id', 'span');
     span.innerHTML = 'x';
     var confirm = document.createElement('p');
-    confirm.setAttribute('id', 'confirmationMsg');
+    confirm.setAttribute('id', 'bookConfirm');
+    text.setAttribute('id', 'bookConfirmTitle');
     confirm.textContent = 'Confirm your order';
     var cancelButton = document.createElement('button');
     cancelButton.textContent = 'Cancel'
-    cancelButton.setAttribute('class', 'removeButton');
+    cancelButton.setAttribute('class', 'confirmButtons');
     cancelButton.onclick = function () {
         confirmParent.style.display = 'none';
     }
@@ -202,15 +203,17 @@ function ConfirmModal() {
     confirmParent.append(secondDiv);
 
 };
-
+var confirmButton;
 function ConfirmBook(index) {
     BookTitle(index)
     text.innerHTML = 'Your book is: ' + bookTitle;
-    var confirmButton = document.createElement('button');
-    confirmButton.textContent = 'Confirm'
-    confirmButton.setAttribute('class', 'removeButton');
-    confirmButton.setAttribute('onclick', 'removeBook(' + index + ')');
-    secondDiv.append(confirmButton);
+    if (confirmButton == undefined) {
+        confirmButton = document.createElement('button');
+        confirmButton.textContent = 'Confirm'
+        confirmButton.setAttribute('class', 'confirmButtons');
+        confirmButton.setAttribute('onclick', 'removeBook(' + index + ')');
+        secondDiv.append(confirmButton);
+    }
     confirmParent.style.display = 'block';
 };
 
