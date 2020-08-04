@@ -1,6 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Satisfy&family=Tangerine:wght@700&display=swap');
 
 /* font-family: 'Caveat', cursive;
@@ -100,7 +97,6 @@ footer {
 }
 
 
-
 /* Confirmation pop-up message */
 #confirm {
   display: none;
@@ -148,7 +144,6 @@ footer {
 }
 
 #secondDiv  a{
-
   margin-top: 50px;
   text-align: center;
   font-size: 24px;
@@ -159,7 +154,6 @@ footer {
 }
 
 #secondDiv  a:hover{
-  
   color: rgb(70, 53, 141);
   transition-duration: 0.5s ;
 
@@ -223,6 +217,12 @@ ul.infoList {
   transform: rotateY(45deg);
   transition-duration: 1s;
   box-shadow: 50px 5px 30px rgba(0, 0, 0, 0.5);
+}
+.columns .book:hover .titleAuthor{
+  transform-origin: 0% 50%;
+  transform: rotateY(45deg);
+  transition-duration: 1s;
+  transition-delay: 0s;
 }
 
 .columns .book:hover .infoList{
@@ -374,12 +374,28 @@ div#categories{
   margin-bottom: 20px ;
 }
 
+.titleAuthor {
+  position: absolute;
+  top:110px;
+  left: 0px;
+  z-index: 11;
+  color: #ddd4c8; 
+  width: max-content;
+}
+.titleAuthor li{
+  width: 200px;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 3px black;
+}
+
 
 
 /* Donate Form */
 a{
   text-decoration: none;
   font-weight: 500;
+  color: #7c0f2a
+
 }
 
 .columns {
@@ -396,15 +412,10 @@ a{
   margin-left: auto;
 }
 
-
 .donate-legend{
-
   margin-bottom: 10%;
   font-size: 28px;
-  
 }
-
-
 
 .donate-title {
   color: #2C3743;
@@ -422,7 +433,7 @@ a{
 .title-container{
   margin-bottom: 5%;
   padding:20px;
-  background-image: url(/images/old-paper.jpg);
+  background-image: url(../images/old-paper.jpg);
   background-size: cover;
   box-shadow: 0px 5px 10px #2C3743;
 

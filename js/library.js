@@ -23,13 +23,18 @@ function generateBook(index, array) {
     var city = document.createElement('li');
     var number = document.createElement('li');
 
+    var onCoverInfo = document.createElement('ul');
+    var onCovertitle = document.createElement('li');
+    var onCoverauthor = document.createElement('li');
+
+
     //in the div
     bookParent.setAttribute('class', 'book');
     emptyPage.setAttribute('class','emptyPage');
     image.setAttribute('class', 'cover');
     image.setAttribute('src', '../images/cover3.jpg');
-    
 
+    onCoverInfo.setAttribute('class','titleAuthor');
     info.setAttribute('class', 'infoList');
 
     //li elements 
@@ -39,6 +44,9 @@ function generateBook(index, array) {
     copies.innerHTML = array[index].copies;
     city.innerHTML = array[index].city.name;
     number.innerHTML = array[index].number;
+
+    onCovertitle.innerHTML = array[index].title;
+    onCoverauthor.innerHTML = array[index].author;
 
     //button w/ added an onClick event
     var remove = document.createElement('button');
@@ -52,10 +60,14 @@ function generateBook(index, array) {
     info.append(copies);
     info.append(city);
     info.append(number);
+    onCoverInfo.append(onCovertitle);
+    onCoverInfo.append(onCoverauthor);
     bookParent.append(image);
     bookParent.append(emptyPage);
     bookParent.append(info);
+    bookParent.append(onCoverInfo);
     bookParent.append(remove);
+
 
     return bookParent;
 }
