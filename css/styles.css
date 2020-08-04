@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@300&display=swap');
-
-/* font-family: 'Merienda', cursive;
-font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
 /* general styles */
 body{
   text-align: center;
   margin: 0;
-  background-color:#dedbd1 ; 
+  background-color:#b8b5ae ; 
   font-family: 'Merienda', cursive;
-  /* color:#a91f1e; */
 
 }
 
@@ -50,7 +47,7 @@ nav ,.h_nav{
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 10px;
+  padding: 10px 0px;
   width: 100%;
 }
 
@@ -81,7 +78,7 @@ a:visited{
 }
 
 footer {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   padding: 10px;
   position: sticky;
@@ -102,6 +99,7 @@ a{
   color:#b9a666;
 
 }
+
 
 /* Confirmation pop-up message */
 #confirm {
@@ -229,6 +227,9 @@ ul.infoList {
   transform: rotateY(45deg);
   transition-duration: 1s;
   transition-delay: 0s;
+}
+.titleAuthor{
+  font-family: 'Cinzel', serif;
 }
 
 .columns .book:hover .infoList{
