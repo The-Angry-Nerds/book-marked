@@ -92,10 +92,12 @@ function generateIndexBooks(index, array) {
     image.setAttribute('class', 'cover');
     info.setAttribute('class','titleAuthor');
 
-    title.setAttribute('id', 'on-cover-title');
+    title.setAttribute('class', 'on-cover-title');
 
     image.setAttribute('src', 'images/cover3.jpg');
     image.setAttribute('id',array[index].title); //to use as a target id
+    title.setAttribute('id',array[index].title); //when clicked on text the pop up don't show unless it has the title as an id
+    author.setAttribute('id',array[index].title);
 
     title.textContent = array[index].title;
     author.textContent = 'By: ' + array[index].author;
