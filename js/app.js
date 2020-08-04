@@ -63,4 +63,5 @@ function filterByCat( categ ){
 
 function changeUser(){
     localStorage.clear(); 
+    location.reload();
 }
