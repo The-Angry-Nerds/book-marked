@@ -16,10 +16,10 @@
         <nav class="h_nav">
             <h1 class="link_nav centerHead alignLeft">Book Marked</h1>
             <ul class="link_nav">
-                <li><a  href="../index.html">HOME</a></li>
-                <li><a href="donate.html">DONATE</a></li>
-                <li><a href="library.html">LIBRARY</a></li>
-                <li><a href="map.html">MAP</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="map.html">Map</a></li>
             </ul>
             <a><span class="link_nav centerHead" id="user"></span></a>
         </nav>
@@ -38,33 +38,13 @@
             <fieldset class="fieldset-donate">
                 <legend class="donate-legend">Book Donation Details</legend>
 
-                <!-- <label for="title"  >Book Title</label> -->
                 <input class="input-donate" id="title" type="text" required placeholder="Title">
 
-                <!-- <label for="">Author</label> -->
                 <input class="input-donate" id="author" type="text" required placeholder="Author">
 
-                <!-- <label for="copies">Available copies</label> -->
                 <input class="input-donate" id="copies" type="number" min="1" value="1" placeholder="Copies">
 
-                <!-- <label for="city">City</label> -->
-                <!-- <input class="input-donate" id="city" type="text" required placeholder="City"> -->
-
-                <!-- <label for="phoneNumber">Phone Number</label> -->
                 <input class="input-donate" id="phoneNumber" type="tel" required placeholder="Phone Number">
-                <div class="city-container">
-                    <select id="city" class="select-css" required>
-                        <option value="" disabled selected>Select your city</option>
-                        <option value='{"lat":31.945368,"lng":35.928371,"name":"Amman"}
-                        '>Amman</option>
-                        <option value='{"lat":29.533991,"lng":35.00502,"name":"Aqaba"}
-                        '>Aqaba</option>
-                        <option value='{"lat":32.456957,"lng":35.847908,"name":"Irbid"}
-                        '>Irbid</option>
-                    </select>
-                </div>
-
-
 
                 <label>Categories</label>
                 <input id="radioDrama" type="radio" name="categories" id="Drama" value="Drama" required />
@@ -75,7 +55,41 @@
 
                 <input id="radioInformative" type="radio" name="categories" id="Informative" value="Informative" />
                 <label for="Informative">Informative</label>
+
+                <div class="city-container">
+                    <select id="city" class="select-css" required>
+                        <option value="" disabled selected>Select your city</option>
+                        <option value='{"lat":32.33326,"lng": 35.75279,"name":"Ajloun"}
+                        '>Ajloun</option>
+                        <option value='{"lat":31.951361,"lng":35.924405,"name":"Amman"}
+                        '>Amman</option>
+                        <option value='{"lat":29.52667,"lng": 35.00778,"name":"Aqaba"}
+                        '>Aqaba</option>
+                        <option value='{"lat":32.0367,"lng":35.7288,"name":"Balqa"}
+                        '>Balqa</option>
+                        <option value='{"lat":32.5568,"lng":35.8469,"name":"Irbid"}
+                        '>Irbid</option>
+
+                        <option value='{"lat":32.2747,"lng":35.8961,"name":"Jarash"}
+                        '>Jarash</option>
+                        <option value='{"lat":31.1853,"lng":35.7048,"name":"Karak"}
+                        '>Karak</option>
+                        <option value='{"lat":30.1927,"lng":35.7249,"name":"Ma`an"}
+                        '>Ma`an</option>
+                        <option value='{"lat":31.7193,"lng":35.7932,"name":"Madaba"}
+                        '>Madaba</option>
+                        <option value='{"lat":32.3417,"lng":36.2020,"name":"Mafraq"}
+                        '>Mafraq</option>
+                        <option value='{"lat":30.8337,"lng":35.6161,"name":"Tafilah"}
+                        '>Tafilah</option>
+                        <option value='{"lat":32.0608,"lng":36.0942,"name":"Zarqa"}
+                        '>Zarqa</option>
+                    </select>
+                </div>
+
                 <input class="donate-btn" type="submit" value="Donate">
+
+
 
             </fieldset>
         </form>
@@ -89,10 +103,8 @@
     <footer>
         <div class="footerItem">
             <ul class="link_nav">
-                <li><a href="about-us.html">ABOUT US</a></li>
-                <li><a href="tel:079123455">CALL US</a></li>
-                <a href="http://www.instagram.com" class="fa fa-instagram"></a>
-                <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="tel:079123455">Call Us</a></li>
 
             </ul>
         </div>
