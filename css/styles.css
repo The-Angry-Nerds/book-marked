@@ -544,22 +544,34 @@ li.on-cover-title{
 
 .about-me-person img {
   float: left;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 5px 20px 50px;
+  width: 250px;
+  height: 300px;
+  border: 10px solid #b9a666;
 }
 
 
 .about-me-person p {
-  margin: 5%;
-}
+  margin: 2% 5%;
+  float: right;
+  width: 56%;
 
+}
+.about-me-person p b{
+  font-size: 1.5em;
+}
 .about-me-person #middle-img {
   float: right;
+  margin: 20px 50px 20px 10px;
+
 }
 
 
 .about-me-person #middle-p {
-  float: left;
-width: 50%;
+  /* float: left; */
+  width: 90%;
+  margin: 3% 5%;
+
 }
 
 /* Searchbar */
