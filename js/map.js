@@ -14,7 +14,7 @@ var infowindow;
 var marker, i;
 
 for (i = 0; i < allBooks.length; i++) {
-    var randomOff = Math.random() * (0.05 + 0.05) - 0.05;
+    var randomOff = Math.random() * (0.03 + 0.03) - 0.03;
     console.log(randomOff);
     infowindow = new google.maps.InfoWindow({       //Please Style the info window on maps 
         content: 'Title: ' + allBooks[i].title +
