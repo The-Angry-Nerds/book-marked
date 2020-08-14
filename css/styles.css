@@ -30,7 +30,7 @@ header, footer{
   margin: 0;
   width: 100%;
   padding: 10px;
-
+  left:0;
 }
 
 header{
@@ -43,13 +43,8 @@ header ul {
 
 footer {
   bottom: 0;
-  left:0;
 }
 
-.footerItem a {
-  display: inline;
-  text-decoration: none;
-}
 .centerHead{
   width: 230px;
   display: inline-block;
@@ -75,20 +70,15 @@ nav ,.h_nav{
   padding: 0  2%;
 }
 
-.link_nav li a:hover{
-  color: white;
-  transition: all 0.3s ease 0s;
-}
-
-a:visited{
-  color: inherit;
-}
-
 a{
   text-decoration: none;
   color:#b9a666;
 }
 
+a:hover {
+  color: white;
+  transition: all 0.3s ease 0s;
+}
 .logout{
   margin-right: 20px;
   font-size: 15px;
