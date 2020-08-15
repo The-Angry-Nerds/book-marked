@@ -29,7 +29,6 @@ header, footer{
   z-index: 100;
   margin: 0;
   width: 100%;
-  padding: 10px;
   left:0;
 }
 
@@ -47,7 +46,6 @@ footer {
 
 .centerHead{
   width: 230px;
-  display: inline-block;
 }
 
 .alignLeft{
@@ -56,13 +54,14 @@ footer {
 
 .link_nav{
   margin: 0px 10px;
-  padding: 0;
+  padding: 10px 0px;
   box-sizing: border-box;
 }
 
 nav ,.h_nav{
   justify-content: space-between;
   display: flex;
+  
 }
 
 .link_nav li{
@@ -77,20 +76,27 @@ a{
 
 a:hover {
   color: white;
+  cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+
 .logout{
-  margin-right: 20px;
   font-size: 15px;
+  background-color: #dedbd1;
+  position: absolute;
+  display: none;
+  top:39px; 
+  right:0px;
+  padding:5px;
+  width:230px
 }
 
-.logout:hover{
-  cursor: pointer;
-  color: white;
+.userRel{
+  position: relative;
 }
 
-span#user {
-  text-align: right;
+.userRel:hover a.logout , a.logout:hover{
+  display: block;
 }
 
 /* Confirmation pop-up message */
