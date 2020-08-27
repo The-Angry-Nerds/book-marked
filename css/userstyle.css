@@ -2,8 +2,6 @@
 
 
 /* User name */
-
-
 #welcome {
     padding-top: 4%;
     padding-left: 4%;
@@ -11,10 +9,7 @@
     width:90%;
     height: 80%;
     background-color: #d8dce48a;
-    border-radius: 5px;
-    
-    
-    
+    border-radius: 5px;  
 }
 
 #namelabel {
@@ -22,7 +17,6 @@
     margin-left: -5%;
     margin-bottom: 4%;
     display: block;
-
 }
 
 #name {
@@ -30,12 +24,10 @@
     width: 50%;
     margin-left: 23%;
     border-radius: 15px;
-    color: saddlebrown;
     font-size: larger;
     border: 0px;
     display: block;
     text-indent: 60px;
-
 }
 
 #name:hover {
@@ -76,7 +68,6 @@ body, html {
 * {
     box-sizing: border-box;
     font-family: 'Merienda', cursive;
-
 }
   
 .bg-image {
@@ -96,9 +87,6 @@ body, html {
     background-size: cover;
 }
 
-
-
-
 /* Header */
 nav ,.h_nav{
     font-family: 'Montserrat', sans-serif;
@@ -110,7 +98,6 @@ nav ,.h_nav{
     font-size: 1.2em;
     color: #b9a666;
 }
-
 
 .link_nav{
     margin: 0px 10px;

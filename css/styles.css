@@ -7,7 +7,6 @@ body{
   margin: 0;
   background-color:#b8b5ae ; 
   font-family: 'Merienda', cursive;
-
 }
 
 main{
@@ -18,8 +17,7 @@ main{
   min-height: 600px;
   padding-bottom: 60px;
   color:#2C3743;
-  box-shadow: 0px 0px 20px #2C3743;
-
+  box-shadow: 0px 0px 10px #2C3743;
 }
 
 header, footer{
@@ -27,11 +25,27 @@ header, footer{
   color: #b9a666;
   font-family: 'Montserrat', sans-serif;
   font-size: 19px;
-
+  position: sticky;
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  left:0;
 }
+
+header{
+  top:0;
+}
+
+header ul {
+  width: 50%;
+}
+
+footer {
+  bottom: 0;
+}
+
 .centerHead{
   width: 230px;
-  display: inline-block;
 }
 
 .alignLeft{
@@ -40,25 +54,14 @@ header, footer{
 
 .link_nav{
   margin: 0px 10px;
-  padding: 0;
+  padding: 10px 0px;
   box-sizing: border-box;
 }
+
 nav ,.h_nav{
   justify-content: space-between;
-  align-items: center;
   display: flex;
-  padding: 10px 0px;
-  width: 100%;
-}
-
-header{
-  position: sticky;
-  top:0;
-  z-index: 999;
-}
-
-header ul {
-  width: 50%;
+  
 }
 
 .link_nav li{
@@ -66,53 +69,36 @@ header ul {
   padding: 0  2%;
 }
 
-.link_nav li a{
-  transition: all 0.3s ease 0s;
-}
-
-.link_nav li a:hover{
-  color: white;
-}
-a:visited{
-  color: inherit;
-}
-
-footer {
-  /* width: 100%; */
-  text-align: center;
-  padding: 10px;
-  position: sticky;
-  bottom: 0;
-  left:0;
-  z-index: 100;
-  margin: 0;
-}
-
-.footerItem a {
-  display: inline;
-  text-align: center;
-  text-decoration: none;
-
-}
 a{
   text-decoration: none;
   color:#b9a666;
-
 }
-.logout{
-  margin-right: 20px;
-  font-size: 15px;
-  
 
-}
-.logout:hover{
-  cursor: pointer;
+a:hover {
   color: white;
-}
-span#user {
-  text-align: right;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
+.logout{
+  color: #2C3743 ;
+  background-color: #dedbd1;
+  position: absolute;
+  display: none;
+  top:39px; 
+  right:0px;
+  padding:5px;
+  width:230px;
+  box-shadow: 3px 5px 10px #2c37439a;
+}
+
+.userRel{
+  position: relative;
+}
+
+.userRel:hover a.logout , a.logout:hover{
+  display: block;
+}
 
 /* Confirmation pop-up message */
 #confirm {
@@ -146,14 +132,11 @@ span#user {
   font-weight: bold;
 }
 
-
 #span:hover {
   color: white;
-  cursor: pointer;
 }
   
 #secondDiv p{
-  text-align: center;
   font-size: 40px;
   color: #2C3743;
   padding-top: 10px;
@@ -163,7 +146,6 @@ span#user {
 
 #secondDiv  a{
   margin-top: 50px;
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: #2C3743;
@@ -173,11 +155,8 @@ span#user {
 
 #secondDiv  a:hover{
   color: white;
-
   transition-duration: 0.5s ;
-
 }
-
 
 /* library styles */
 ul.infoList {
@@ -193,17 +172,20 @@ ul.infoList {
   color: #2C3743;
   box-shadow: 2px 2px 5px rgb(206, 206, 206);
 }
+
 .infoList li {
   list-style-type: none;
   border-bottom: 1px solid rgb(214, 214, 214);
   margin-bottom: 7px;
 }
+
 .book {
   position: relative;
   width: 200px;
   padding-top: 270px;
   margin: 25px 70px;
 }
+
 .removeButton {
   width: 100px;
   height: 40px;
@@ -212,14 +194,14 @@ ul.infoList {
   color: white;
   font-family: inherit;
 }
+
 .removeButton:hover{
   cursor: pointer;
   transform: scale(1.05);
   background-color: #b9a666 ;
   transition-duration: 0.2s;
-  color: white;
-
 }
+
 .removeButton:active , .removeButton:focus{
   outline: none;
 }
@@ -240,6 +222,7 @@ ul.infoList {
   transition-duration: 1s;
   box-shadow: 50px 5px 30px rgba(0, 0, 0, 0.5);
 }
+
 .columns .book:hover .titleAuthor{
   transform-origin: 0% 50%;
   transform: rotateY(50deg);
@@ -257,11 +240,12 @@ img.cover ,div.emptyPage{
   width: 200px;
   height: 250px;
 }
+
 div.emptyPage {
   background-image: url(../images/old-paper.jpg);
   z-index: 8;
-
 }
+
 /* tabs */
 #catButtons button, .tab button {
   width: 100px;
@@ -270,34 +254,34 @@ div.emptyPage {
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid #2C3743;
   font-family: 'Merienda', cursive;
-  font-size: 1.05em;
-  /* vertical-align: bottom; */
-
+  font-size: 1.05em;  
 }
+
 #catButtons,.tab{
   height: 39px;
   border-bottom: 1px solid #2C3743;
   background-color: white;
   padding-top: 5px;
-
 }
+
 #catButtons button:hover,.tab button:hover{
   border-bottom: 1px solid #dedbd1;
   cursor: pointer;
   background-color:#dedbd1 ; 
   box-shadow: 5px -3px 3px #2c374398;
 }
+
 #catButtons button:focus,.tab button:focus{
   outline: none;
   background-color:#dedbd1 ; 
   border-bottom: 1px solid #dedbd1;
   box-shadow: 5px -3px 3px #2c374398;
-
 }
 
 #bookCateg{
   min-height: 300px;
 }
+
 .nobooksAvailable{
   padding:25px
 }
@@ -312,33 +296,31 @@ div.emptyPage {
   font-family: inherit;
   font-size: 18px;
 }
+
 .confirmButtons:hover{
   color:#dedbd1 ; 
   transform: scale(1.1);
-
 }
+
 .confirmButtons:active , .confirmButtons:focus{
   outline: none;
 }
+
 p#bookConfirm {
   margin-bottom: 20px;
   font-size: 30px;
   color:#dedbd1 ; 
-
 }
+
 p#bookConfirmTitle{
   font-size: 25px;
-
-
 }
-
 
 /* index styles */
 #figure-logo{
   background-color: white;
   background-image: url(../images/old-paper2.jpg);
   background-size: cover;
-  
   padding: 20px;
   box-shadow: 0px 5px 10px #2C3743;
   height: 200px;
@@ -349,13 +331,13 @@ p#bookConfirmTitle{
 }
 
 #description {
-  /* font-family: 'Satisfy', cursive; */
   word-spacing: 10px;
   font-size: 1.2em;
   line-height: 1.2;
   padding: 20px;
   color: #2C3743;
 }
+
 #button{
   height: 200px;
   margin: 0 auto;
@@ -369,13 +351,13 @@ p#bookConfirmTitle{
   margin: 25px 55px;
   padding-top: 65px;
   border-radius: 3px;
-  text-align: center;
   font-size: 20px;
   box-shadow: 0px 5px 10px #2C3743;
   background-size: cover;
   font-family: 'Merienda', cursive;
   color: #2C3743;
 }
+
 .buttons-index:hover{
   transform: scale(1.05);
   transition-duration: 0.5s;
@@ -399,27 +381,27 @@ div#categories{
   z-index: 99;
   display: none;
   box-shadow: 0px 5px 10px #2C3743;
-
 }
+
 #popUpInfo ul{
   padding-top: 50px;
 }
+
 #popUpInfo li{
   padding: 5px;
 }
 
 .relative {
   position: relative;
-
 }
+
 #categText{
-  /* font-family: 'Satisfy', cursive; */
   background-color: white;
   height: 75px;  
-  text-align: center;
   line-height: 70px;
   font-size: 35px;
 }
+
 .banner{
   width: 200px;
 }
@@ -427,7 +409,6 @@ div#categories{
 .tab{
   margin-bottom: 20px ;
 }
-
 
 .titleAuthor {
   position: absolute;
@@ -437,6 +418,7 @@ div#categories{
   z-index: 11;
   color: #ddd4c8e3; 
 }
+
 .titleAuthor li{
   margin-bottom: 10px;
   width: 150px;
@@ -444,21 +426,15 @@ div#categories{
   text-shadow: 1px 1px 3px black ;
   font-size: 15px;
   text-overflow: ellipsis;
-
 }
+
 li.on-cover-title{
   font-size: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
-
-
-
 /* Donate Form */
-
-
 .columns {
   display: inline-block;
   vertical-align: top;
@@ -484,7 +460,6 @@ li.on-cover-title{
   margin-top: 6%;
   margin-bottom: 2%;
   font-size: 48px;
-  /* font-family: 'Tangerine', cursive; */
 }
 
 .donate-subtitle{
@@ -492,6 +467,7 @@ li.on-cover-title{
   color: #7c0f2a;
   padding-bottom: 1%;
 }
+
 .title-container{
   margin-bottom: 5%;
   padding:20px;
@@ -499,8 +475,8 @@ li.on-cover-title{
 
   background-size: cover;
   box-shadow: 0px 5px 10px #2C3743;
-
 }
+
 .input-donate {
   display: block;
   height: 20px;
@@ -520,7 +496,6 @@ li.on-cover-title{
   font-family: 'Merienda', cursive;
 }
 
-
 .donate-btn {
   padding: 10px 15px;
   display: inline;
@@ -528,7 +503,6 @@ li.on-cover-title{
   background-color: #2C3743 ;
   font-size: 18px;
   width: fit-content;
-  text-align: left;
   margin-left: auto;
   margin-right: auto;
   bottom: 10px;
@@ -544,8 +518,9 @@ li.on-cover-title{
 }
 
 .city-container{
-    margin-left: 25%;
+  margin-left: 25%;
 }
+
 .select-css {
 	display: block;
 	font-size: 16px;
@@ -553,30 +528,18 @@ li.on-cover-title{
   width: 65%;
 	margin: 30px 0px;
 	border: 1px solid #aaa;
-	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
 	appearance: none;
-	background-repeat: no-repeat, repeat;
-	background-position: right .7em top 50%, 0 0;
-  background-size: .65em auto, 100%;
   font-family: 'Merienda', cursive;
-
 }
-.select-css::-ms-expand {
-  display: none;
 
-}
 .select-css:hover {
-  border-color: #888;
   cursor: pointer;
 }
+
 .select-css:focus {
-	border-color: #aaa;
-	color: #222;
 	outline: none;
 }
-.select-css option {
-	font-weight:normal;
-}
+
 [type="radio"]{
   margin-left: 10px;
 }
@@ -584,8 +547,8 @@ li.on-cover-title{
 [type="radio"]:hover{
   cursor: pointer;
 }
-/* About me */
 
+/* About me */
 .about-me-person{
   display: inline-block;
   text-align: justify;
@@ -599,32 +562,27 @@ li.on-cover-title{
   border: 10px solid #b9a666;
 }
 
-
 .about-me-person p {
   margin: 2% 5%;
   float: right;
   width: 56%;
-
 }
+
 .about-me-person p b{
   font-size: 1.5em;
 }
+
 .about-me-person #middle-img {
   float: right;
   margin: 20px 50px 20px 10px;
-
 }
 
-
 .about-me-person #middle-p {
-  /* float: left; */
   width: 90%;
   margin: 3% 5%;
-
 }
 
 /* Searchbar */
-
 .search-bar{
   margin-top: 12px;
 }
@@ -641,9 +599,7 @@ li.on-cover-title{
   margin-bottom: 12px;
 }
 
-
 .gm-style .gm-style-iw {
-  /* background-color: #dedbd1 ; */
   border-radius: 3px;
   font-family: 'Merienda', cursive;
 }
